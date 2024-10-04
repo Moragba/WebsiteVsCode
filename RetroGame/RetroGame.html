@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Game</title>
     <link rel="stylesheet" href="/Styles/RetroGame.css">
+    <audio id="Hit_01" src="/RetroGame/Audio/Hit_01.mp3"></audio>
 
 </head>
-<body>
-    <canvas id="mainCanvas" onclick="StartTesting()" height="700px" width="1500px"></canvas>
+<body onload="OnLoad()">
+    <div class="UIContainer">
+        <button id="StartButton" onclick="StartFromButton()">Start Game</button>
+    </div>
+    <div id="Countdown"></div>
+    <canvas id="mainCanvas" class="ScaleFieldhalf ShadowFieldhalf" height="700px" width="1500px"></canvas>
+    <div class="UIContainer">
+        <table>
+            <tr>
+                <td id="Player1_Points">
+                    
+                </td>
+                <td id="Player2_Points">
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
     
 </body>
 <script src="/Scripts/RetroGame.js"></script>
