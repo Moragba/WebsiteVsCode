@@ -10,18 +10,32 @@
 </head>
 <body onload="OnLoad()">
     <div class="UIContainer">
-        <button id="StartButton" onclick="StartFromButton()">Start Game</button>
+        <button id="StartButton" onclick="StartFromButton()">Player 1 VS CPU</button>
+        <button id="StartButton" onclick="StartFromButton()">Player 1 VS Player 2</button>
+        <div id="Steuerung">
+            <div>
+                
+                <p class="img1"> Player 1 Up</p>
+                <p class="img2">Player 1 Down</p>
+            </div>
+            <p></p>
+            <div>
+                <p class="img3">Player 2 Up</p>
+                <p class="img4">Player 2 Down</p>
+            </div>
+
+
+        </div>
+
     </div>
     <div id="Countdown"></div>
     <canvas id="mainCanvas" class="ScaleFieldhalf ShadowFieldhalf" height="700px" width="1500px"></canvas>
     <div class="UIContainer">
         <table>
             <tr>
-                <td id="Player1_Points">
-                    
+                <td id="Player1_Points">                    
                 </td>
-                <td id="Player2_Points">
-                    
+                <td id="Player2_Points">                    
                 </td>
             </tr>
         </table>

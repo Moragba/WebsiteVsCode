@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 html{
     background-color: black;
@@ -46,13 +47,16 @@ button{
     width: 150px;
 }
 .UIContainer{
-    height: 100px;
+    margin-top: 20px;
+    height: 80px;
     width: 100%;
-    align-content: center;    
+    justify-content: space-evenly;
+    display: flex;    
 }
 .UIContainer table{
     height: 100%;
     width: 100%;
+    
 }
 .UIContainer table tr td{
     color: white;
@@ -92,3 +96,30 @@ button{
     animation-name: CountAnimation;
     animation-duration: 1s;
 }
+#Steuerung{
+    display: flex;
+    color: white;
+    margin-left: 50px;
+}
+#Steuerung p{
+    margin-left: 50px;
+    margin-bottom: 2px;
+    line-height: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.img1{
+    background-image: url(/RetroGame/Images/Images_g18.svg);
+}
+.img2{
+    background-image: url(/RetroGame/Images/Images_g19.svg);
+}
+.img3{
+    background-image: url(/RetroGame/Images/Images_g17.svg);
+}
+.img4{
+    background-image: url(/RetroGame/Images/Images_g20.svg);
+}
+

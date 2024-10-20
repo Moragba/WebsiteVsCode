@@ -171,6 +171,7 @@ function ReseteGameStates(){
     rectstartPosYP2 = (c.height-200)/2
     RandomBallStart()
     ctx.clearRect(0, 0, c.width, c.height);
+    hit_1_sound.playbackRate = 0.5;
 }
 function RandomBallStart(){
     if(GetRandomInt(2) == 0){
@@ -303,7 +304,7 @@ let rectstartPosYP1 = (c.height-200)/2
 function DrawRectPlayerOne(){
     ctx.beginPath();
     ctx.shadowColor = "rgba(120, 120, 255, 1)"
-    ctx.shadowBlur = 25    
+    ctx.shadowBlur = 5    
     ctx.rect(100, rectstartPosYP1, 15, 200)
     ctx.fillStyle = "rgba(255, 255, 255, 1)"
     ctx.fill();
