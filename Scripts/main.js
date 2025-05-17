@@ -224,34 +224,7 @@ const BSkill3Cont = document.getElementById("BubbleSkill3Cont")
 const BSkill4Cont = document.getElementById("BubbleSkill4Cont")
 
 
-cardsAll.forEach((c) => {
-	c.addEventListener("click",(e) =>{
-		e.currentTarget.classList.add("hidden")
 
-		if(e.currentTarget.classList.contains("Card1Pos")){
-			BSkill1.classList.remove("hidden")
-			BPop1.classList.add("hidden")
-			BSkill1Cont.classList.remove("hidden")						
-		}
-		if(e.currentTarget.classList.contains("Card2Pos")){
-			BSkill2.classList.remove("hidden")
-			BPop2.classList.add("hidden")
-			BSkill2Cont.classList.remove("hidden")
-		}
-		if(e.currentTarget.classList.contains("Card3Pos")){
-			BSkill3.classList.remove("hidden")
-			BPop3.classList.add("hidden")
-			BSkill3Cont.classList.remove("hidden")
-		}
-		if(e.currentTarget.classList.contains("Card4Pos")){
-			BSkill4.classList.remove("hidden")
-			BPop4.classList.add("hidden")
-			BSkill4Cont.classList.remove("hidden")
-		}
-		
-		
-	})}
-)
 	 
 
 

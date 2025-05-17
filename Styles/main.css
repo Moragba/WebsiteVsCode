@@ -39,7 +39,7 @@ body{
 }
 
 .Sectionbase h1{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 3rem;
     color:  rgb(166, 125, 255);
     text-decoration: underline;
@@ -301,10 +301,7 @@ body{
 .SkillsGridContainer{
     height: auto;
     display: grid;
-    grid-template-columns: 40vw 40vw;
-    grid-template-rows: 39vh 39vh;
-    column-gap: 3rem;
-    row-gap: 3rem;
+    row-gap: 1rem;
     justify-items: left;
 }
 
@@ -879,96 +876,23 @@ color: unset;
 }
 
 .Card{
-    width: inherit;
+    width: 100%;
     height:auto;
     background-color: rgba(0, 0, 0, 0.12);
-    border-radius: 3%;
     border:  rgba(0, 0, 0, 0.2) 5px solid;
-    box-shadow: 3px 3px 15px 5px rgba(129,92,212,1);
+    box-shadow: 1px 1px 15px 1px rgba(129, 92, 212, 0.8);
     backdrop-filter: blur(8px);
-    transform: translate(-40px, -90px);
     line-height: 1.8rem;
-    padding-bottom: 50px;    
+    padding-bottom: 10px;    
 }
 
 
 
-.CardSpawnCard1{
-    animation: CardSpawnanimation3 0.8s ease-out 0s 1 normal forwards;
-}
-@keyframes CardSpawnanimation3 {
-	0% {
-        scale: 0;
-        opacity: 0;
-        transform: translate(0px, 0px);
-    }    
-	100% {
-        scale: 1;
-        opacity: 1;
-        transform: translate(0px, 0px);
-	}
 
-}
-.CardSpawnCard2{
-    animation: CardSpawnanimation1 0.8s ease-out 0s 1 normal forwards;
-}
-@keyframes CardSpawnanimation1 {
-	0% {
-        scale: 0;
-        opacity: 0;
-        transform: translate(0px, 0px);
-        
-
-    }    
-	100% {
-        scale: 1;
-        opacity: 1;
-        transform: translate(0px, 0px);
-
-	}
-
-}
-
-.CardSpawnCard3{
-    animation: CardSpawnanimation2 0.8s ease-out 0s 1 normal forwards;
-}
-@keyframes CardSpawnanimation2 {
-	0% {
-        scale: 0;
-        opacity: 0;
-        transform: translate(0px, 0px);
-    }    
-	100% {
-        scale: 1;
-        opacity: 1;
-        transform: translate(0px, 0px);
-	}
-
-}
-.CardSpawnCard4{
-    animation: CardSpawnanimation4 0.8s ease-out 0s 1 normal forwards;
-}
-@keyframes CardSpawnanimation4 {
-	0% {
-        scale: 0;
-        opacity: 0;
-        transform: translate(0px, 0px);
-        
-
-    }    
-	100% {
-        scale: 1;
-        opacity: 1;
-        transform: translate(0px, 0px);
-
-	}
-
-}
 
 .Card h1{
     padding-left: 10px;
     padding-top: 10px;
-    margin-bottom: 2rem;
     font-size: 2rem;
     color:  rgb(166, 125, 255);
     text-decoration: none;
