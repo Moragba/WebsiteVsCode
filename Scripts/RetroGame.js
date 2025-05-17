@@ -22,7 +22,8 @@ const c = document.getElementById("mainCanvas")
 const ctx = c.getContext("2d") 
 
 /** UISettings */
-var Startbutton = document.getElementById("StartButton")
+var OneplayerButton = document.getElementById("OneplayerButton")
+var TwoplayerButton = document.getElementById("TwoplayerButton")
 var Player1PointsUI = document.getElementById("Player1_Points")
 var Player2PointsUI = document.getElementById("Player2_Points")
 var Player1_Points = 0
@@ -50,6 +51,7 @@ var ballismoving = false;
 var GameRunning = false
 var BallHitsWallPlayer1 = false
 var BallHitsWallPlayer2 = false
+var gameMode = 0
 
 
 /** Audio */
@@ -80,8 +82,46 @@ var ballRadius = 15
 var ballSpeed = new BallSpeed(4)
 var speedmultiplier = 1.2
 
-function StartFromButton(){
-    Startbutton.disabled = true
+function StartFromButtonOne(){
+    OneplayerButton.disabled = true
+    TwoplayerButton.disabled = true
+    gameMode = 1
+
+
+    /** ScaleField on Start Animation */
+    Delay(1).then(() => c.classList.add("ScaleFieldUpAnimation"))
+    Delay(1500).then(() => c.classList.remove("ScaleFieldhalf"))
+    Delay(1500).then(() => c.classList.add("ScaleFieldGameSize"))   
+    Delay(1500).then(() => c.classList.remove("ShadowFieldhalf"))
+    Delay(1500).then(() => c.classList.add("ShadowFieldGameSize"))
+
+
+
+    Delay(1).then(() => Countdown.innerText = "3")
+    Delay(1).then(() => Countdown.classList.add("CountAnimation"))
+    Delay(990).then(() => Countdown.classList.remove("CountAnimation"))
+
+    Delay(1000).then(() => Countdown.innerText = "2")
+    Delay(1000).then(() => Countdown.classList.add("CountAnimation"))
+    Delay(1990).then(() => Countdown.classList.remove("CountAnimation"))
+
+    Delay(2000).then(() => Countdown.innerText = "1")
+    Delay(2000).then(() => Countdown.classList.add("CountAnimation"))
+    Delay(2990).then(() => Countdown.classList.remove("CountAnimation"))
+
+
+    Delay(3000).then(() => Countdown.style.display = "none")
+    Delay(3000).then(() => StartGame())
+
+}
+
+function StartFromButtonTwo(){
+    OneplayerButton.disabled = true
+    TwoplayerButton.disabled = true
+
+    gameMode = 2
+
+
     /** ScaleField on Start Animation */
     Delay(1).then(() => c.classList.add("ScaleFieldUpAnimation"))
     Delay(1500).then(() => c.classList.remove("ScaleFieldhalf"))
@@ -384,6 +424,8 @@ window.addEventListener("keyup", (iP2ku) =>{
 
 /** PlayerMovementUpdater */
 var playermovespeed = 5
+var cpumovespeed = 3
+
 function PlayerMovementUpdater(){
     if (isbuttonPressed_PlayerOne_Up && rectstartPosYP1 > 5) {
         rectstartPosYP1 += -playermovespeed
@@ -391,11 +433,17 @@ function PlayerMovementUpdater(){
     if (isbuttonPressed_PlayerOne_Down && rectstartPosYP1 < c.height - 205) {
         rectstartPosYP1 += playermovespeed
     }
-    if (isbuttonPressed_PlayerTwo_Up && rectstartPosYP2 > 5) {
+    if (isbuttonPressed_PlayerTwo_Up && rectstartPosYP2 > 5 && gameMode == 2) {
         rectstartPosYP2 += -playermovespeed
     }
-    if (isbuttonPressed_PlayerTwo_Down && rectstartPosYP2 < c.height - 205) {
+    if (isbuttonPressed_PlayerTwo_Down && rectstartPosYP2 < c.height - 205 && gameMode == 2) {
         rectstartPosYP2 += playermovespeed    
+    }
+    if (rectstartPosYP2+100 > ballVector.x && rectstartPosYP2 > 5 && gameMode == 1) {
+        rectstartPosYP2 += -cpumovespeed
+    }
+    if (rectstartPosYP2+100 < ballVector.x && rectstartPosYP2 < c.height - 205 && gameMode == 1) {
+        rectstartPosYP2 += cpumovespeed    
     }
 }
 

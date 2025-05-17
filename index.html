@@ -14,9 +14,9 @@
 </head>
 <body>
 
-    <div Class ="TrueBody"> 
-        <!--Nav Section-->
-        <div Class="NavSection">
+    <div Class ="TrueBody" > 
+        <!--Nav Section--><!--insert nav toggler on click-->
+        <div id="Navbar" Class="NavSection navScale1" onclick="">
             <a href="#ÜberMich">Über mich</a>
             <a href="#MeineSkills">Meine Skills</a>
             <a href="#MeineReferenzen">Referenzobjekte</a>
@@ -29,15 +29,14 @@
             </div>
              <div style="display: none;" class="BoatMoveAnimation2 imgboatcontainer">          
                 <div class="BoatMoveAnimation1 imgboatelement">
-                </div> 
+                </div>
             </div>
                        
             <div Class="HeroText">
-                <div class="Smallfont TextGradient1" style="margin-left: 30rem;">Hi, Ich heiße</div>
-                <div class="Bigfont TextGradient2" style="margin-left: 3rem;">Andreas</div>
-                <div class="Bigfont TextGradient1" style="margin-left: 30rem;">Fischer</div>
-                <div class="Smallfont TextGradient1" style="margin-left: 50rem;">und ich bin</div>
-                <div class="Bigfont TextGradient2" style="margin-left: 7rem;">Webdesigner</div>
+                <div id="HeaderText1" class="Smallfont TextGradient1" >Hi, Ich bin</div>
+                <div id="HeaderText2" class="Bigfont TextGradient2">Andreas</div>
+                <div id="HeaderText3" class="Bigfont TextGradient1">Fischer</div>
+                
             </div>
 
 
@@ -67,29 +66,29 @@
             <h1>Über mich</h1>
             <div class="AboutmeGridContainer">
                 <div>
-                    <p>Hi, ich bin Andreas Fischer.  <br><br>
-                    Schon seit meiner Jugend schlägt mein Herz für IT und Technologie.<br>
-                    Ich habe früh angefangen an Computern zu schrauben und Konsolen auseinander zu nehmen. <br><br>
-                    Als ich älter wurde habe ich mich natürlich auch für Computerspiele Interessiert. <br><br>
-                    Schnell reichte es nicht nur zu Spielen und ich schnupperte in meine erste Programmiersprache rein. C#<br>
-                    Hier konnte ich mein Wissen in Bezug auf Objektorientierte Programmierung aufbauen und festigen. <br><br>
-                    Nach ein paar kleinen Programmen und Spielen bin ich durch die Idee für mich und ein paar Freunde eine Website zu gestalten, in die Webentwicklung reingerutscht. <br><br>
-                    Mich haben sofort die zahllosen Möglichkeiten beindruckt mit denen sich individuelle Designs und technische Aspekte auf Website gestalten lassen. <br><br>
-
-                    Hier fing alles an.. <br><br>
-
-                    Ich habe mich im Rahmen verschiedener kleiner Projekte in verschiedene Themen einarbeiten können <br>
-                    und nun habe ich ein Skillset das von HTML und CSS über JavaScript bis hin zu PHP reicht und mir viele Möglichkeiten bietet. <br>                    
-                    Jetzt kann ich auf einige Erfahrung in den Bereichen IT-Serviceleistungen, Softwareentwicklung und Webentwicklung zurückblicken.  <br>
+                    <p>Ich bin Andreas Fischer,</p>
                     <br>
+                    <p>Student der Softwarearchitektur mit Schwerpunkt auf Softwareentwicklung und modernen Systemarchitekturen.</p>
+                    <br>
+                    <p>Im Rahmen meines Studiums habe ich bereits fundierte Kenntnisse in den Bereichen objektorientierte Programmierung, </p>
+                    <p>Datenstrukturen und Algorithmen, Datenbanksysteme, Unified Modeling Language (UML) sowie Software Engineering erworben. </p>
+                    <p>Besonderen Fokus lege ich aktuell auf die Programmiersprache Java, mit der ich intensiv arbeite.</p>
+                    <p>Ergänzend bringe ich Erfahrung mit C# und Python mit.</p>
+                    <br>
+                    <p>Durch kleinere Projekte und praktische Übungen konnte ich erste Erfahrungen in der Webentwicklung (HTML, CSS, JavaScript, PHP)</p>
+                    <p>sowie im Datenbankdesign und -zugriff sammeln. </p>
+                    <p>Dabei habe ich gelernt, Softwarelösungen systematisch zu planen, zu strukturieren und umzusetzen.</p>
+                    <br>
+                    <p>Meine bisherigen Module darunter auch Programmieren mit Java, Einführung in die Informatik und die technischen sowie theoretischen Grundlagen von Datenbanksystemen </p>
+                    <p>bilden die Grundlage für ein breites technisches Verständnis und eine solide Herangehensweise an Softwareprojekte.</p>
+                    <br>
+                    <p>Ich bin auf der Suche nach einer Position im Bereich Softwareentwicklung, in der ich mein Wissen praktisch einsetzen, </p>
+                    <p>weiter vertiefen und aktiv zur Entwicklung leistungsfähiger Systeme beitragen kann. Besonders interessieren mich Projekte, bei denen technisches Verständnis, </p>
+                    <p>sauberes Design und nachhaltige Codequalität gefragt sind.</p>
+                    <br>
+                    <p>Wenn Sie einen engagierten Entwickler suchen, der solides technisches Know-how mitbringt und bereit ist, Verantwortung zu übernehmen, </p>
+                    <p>freue ich mich auf Ihre Kontaktaufnahme.</p>
 
-                    Heute bin ich als Webdesigner Selbständig und freue mich jeden Tag auf neue Herausforderungen, spannende Menschen, und interessante Projekte.<br><br>
-
-                    Solltest du Interessiert sein mit mir ein eigenes Projekt zu starten, einen Webauftritt zu aktualisieren, einen neuen Look verpassen oder die Website an neue Gegebenheiten anpassen möchtest, <br>
-                    dann melde dich einfach. <br><br>
-                    
-                   
-                    Ich freue mich darauf, mit dir gemeinsam, deine Projekte zu realisieren.</p>
                 </div>
                 <div id="AboutImage">
                     <div class="BubbleContainer bubblewavey3">
@@ -106,8 +105,8 @@
         <div id="MeineSkills" class="Sectionbase radiantbakcgroundtop">
             <h1>Meine Skills</h1>
             <div class="SkillsGridContainer">
-                <div>
-                    <div class="BubbleSkillsContainer bubblewavey3 SkillBubblePos1">
+                
+                    <div id="BubbleSkill1Cont" class="BubbleSkillsContainer bubblewavey3 SkillBubblePos1">
                         <div id="BubbleSkill1" class="rounded BubbleSkills" onclick="Popping1()">
                             <div class="SkillBubbleText">
                                 HTML
@@ -122,16 +121,14 @@
                             <div class="miniBubble1 rounded miniBubblePosStart miniBubblePlop4"></div>
                             <div class="miniBubble2 rounded miniBubblePosStart miniBubblePlop5"></div>
                         </div>
-                        <div id="Card1" class="Card Card1Pos hidden">
-                            <h1>HTML</h1>
-                            <p>Zuerst lernte ich HTML, da es die Struktur jeder Webseite definiert. Ich begann mit den Grundelementen wie Überschriften, Absätzen und Links und arbeitete mich dann zu komplexeren Dingen wie Formularen und Tabellen vor. Ich stellte mir HTML als das „Skelett“ einer Webseite vor – es gibt den Inhalten ihre Form und Struktur. Indem ich HTML in verschiedenen Projekten anwandte, entwickelte ich ein Verständnis dafür, wie wichtig eine saubere und semantisch korrekte Struktur ist, um sowohl die Benutzerfreundlichkeit als auch die SEO zu verbessern. 
-                            </p>
-                        </div>
                     </div>
-                    
-                </div>
-                <div>
-                    <div class="BubbleSkillsContainer bubblewavey3 SkillBubblePos2">
+                    <div id="Card1" class="Card Card1Pos hidden">
+                        <h1>HTML</h1>
+                        <p>Zuerst lernte ich HTML, da es die Struktur jeder Webseite definiert. Ich begann mit den Grundelementen wie Überschriften, Absätzen und Links und arbeitete mich dann zu komplexeren Dingen wie Formularen und Tabellen vor. Ich stellte mir HTML als das „Skelett“ einer Webseite vor – es gibt den Inhalten ihre Form und Struktur. Indem ich HTML in verschiedenen Projekten anwandte, entwickelte ich ein Verständnis dafür, wie wichtig eine saubere und semantisch korrekte Struktur ist, um sowohl die Benutzerfreundlichkeit als auch die SEO zu verbessern. 
+                        </p>
+                    </div>                
+                
+                    <div id="BubbleSkill2Cont" class="BubbleSkillsContainer bubblewavey3 SkillBubblePos2">
                         <div id="BubbleSkill2" class="rounded BubbleSkills" onclick="Popping2()">
                             <div class="SkillBubbleText">
                                 CSS
@@ -145,17 +142,15 @@
                             <div class="miniBubble3 rounded miniBubblePosStart miniBubblePlop3"></div>
                             <div class="miniBubble1 rounded miniBubblePosStart miniBubblePlop4"></div>
                             <div class="miniBubble2 rounded miniBubblePosStart miniBubblePlop5"></div>
-                        </div>
-                        <div id="Card2" class="Card Card2Pos hidden">
-                            <h1>CSS</h1>
-                            <p>Nachdem ich HTML gemeistert hatte, wandte ich mich CSS zu, um das Erscheinungsbild meiner Websites zu gestalten. CSS ist wie die „Haut“ einer Webseite – es macht das Design ansprechend und benutzerfreundlich. Ich experimentierte viel mit Farben, Schriftarten, Layouts und Animationen. Durch CSS konnte ich meine Kreativität voll entfalten und meinen Websites eine individuelle Ästhetik verleihen. Responsive Design war ein weiteres wichtiges Thema, das ich lernte – also sicherzustellen, dass meine Websites auf allen Geräten gut aussehen, egal ob auf einem Desktop, Tablet oder Smartphone.
-                            </p>
-                        </div>
-                        
+                        </div>                        
                     </div>
-                </div>
-                <div>
-                    <div class="BubbleSkillsContainer bubblewavey3 SkillBubblePos3">
+                    <div id="Card2" class="Card Card2Pos hidden">
+                        <h1>CSS</h1>
+                        <p>Nachdem ich HTML gemeistert hatte, wandte ich mich CSS zu, um das Erscheinungsbild meiner Websites zu gestalten. CSS ist wie die „Haut“ einer Webseite – es macht das Design ansprechend und benutzerfreundlich. Ich experimentierte viel mit Farben, Schriftarten, Layouts und Animationen. Durch CSS konnte ich meine Kreativität voll entfalten und meinen Websites eine individuelle Ästhetik verleihen. Responsive Design war ein weiteres wichtiges Thema, das ich lernte – also sicherzustellen, dass meine Websites auf allen Geräten gut aussehen, egal ob auf einem Desktop, Tablet oder Smartphone.
+                        </p>
+                    </div>
+                
+                    <div id="BubbleSkill3Cont" class="BubbleSkillsContainer bubblewavey3 SkillBubblePos3">
                         <div id="BubbleSkill3" class="rounded BubbleSkills" onclick="Popping3()">
                             <div class="SkillBubbleText">
                                 JavaScript
@@ -170,15 +165,14 @@
                             <div class="miniBubble1 rounded miniBubblePosStart miniBubblePlop4"></div>
                             <div class="miniBubble2 rounded miniBubblePosStart miniBubblePlop5"></div>
                         </div>
-                        <div id="Card3" class="Card Card3Pos hidden">
-                            <h1>JavaScript</h1>
-                            <p>Mit HTML und CSS allein konnte ich statische Websites erstellen, aber um interaktive und dynamische Elemente hinzuzufügen, musste ich JavaScript lernen. JavaScript ermöglichte es mir, meinen Websites Leben einzuhauchen – zum Beispiel durch animierte Slider, interaktive Formulare oder dynamisch geladene Inhalte. Ich begann mit einfachen Skripten und arbeitete mich dann zu fortgeschritteneren Konzepten wie Event-Handling und DOM-Manipulation vor. Durch JavaScript wurde ich in der Lage, Benutzererfahrungen zu schaffen, die nicht nur funktional, sondern auch fesselnd und intuitiv sind.
-                            </p>
-                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="BubbleSkillsContainer bubblewavey3 SkillBubblePos4">
+                    <div id="Card3" class="Card Card3Pos hidden">
+                        <h1>JavaScript</h1>
+                        <p>Mit HTML und CSS allein konnte ich statische Websites erstellen, aber um interaktive und dynamische Elemente hinzuzufügen, musste ich JavaScript lernen. JavaScript ermöglichte es mir, meinen Websites Leben einzuhauchen – zum Beispiel durch animierte Slider, interaktive Formulare oder dynamisch geladene Inhalte. Ich begann mit einfachen Skripten und arbeitete mich dann zu fortgeschritteneren Konzepten wie Event-Handling und DOM-Manipulation vor. Durch JavaScript wurde ich in der Lage, Benutzererfahrungen zu schaffen, die nicht nur funktional, sondern auch fesselnd und intuitiv sind.
+                        </p>
+                    </div>
+                
+                    <div id="BubbleSkill4Cont" class="BubbleSkillsContainer bubblewavey3 SkillBubblePos4">
                         <div id="BubbleSkill4" class="rounded BubbleSkills" onclick="Popping4()">
                             <div class="SkillBubbleText">
                                 C#
@@ -192,18 +186,18 @@
                             <div class="miniBubble1 rounded miniBubblePosStart miniBubblePlop4"></div>
                             <div class="miniBubble2 rounded miniBubblePosStart miniBubblePlop5"></div>
                         </div>
-                        <div id="Card4" class="Card Card4Pos hidden">
-                            <h1>C# (CSharp)</h1>
-                            <p>Parallel dazu begann ich, mich mit C# zu beschäftigen, da ich mich für Backend-Entwicklung interessierte und wie sie in Webanwendungen integriert werden kann. C# wurde besonders nützlich, als ich anfing, komplexere Webanwendungen zu entwickeln, die serverseitige Logik benötigten. Durch die Kombination von C# und ASP.NET konnte ich nicht nur statische Websites, sondern auch dynamische, datenbankgestützte Webanwendungen entwickeln. Diese Kenntnisse halfen mir, mein Verständnis für die gesamte Architektur einer Website zu vertiefen, von der Datenbank bis hin zur Benutzeroberfläche.
-                            </p>
-                        </div>
                     </div>
-                </div>
+                    <div id="Card4" class="Card Card4Pos hidden">
+                        <h1>C# (CSharp)</h1>
+                        <p>Parallel dazu begann ich, mich mit C# zu beschäftigen, da ich mich für Backend-Entwicklung interessierte und wie sie in Webanwendungen integriert werden kann. C# wurde besonders nützlich, als ich anfing, komplexere Webanwendungen zu entwickeln, die serverseitige Logik benötigten. Durch die Kombination von C# und ASP.NET konnte ich nicht nur statische Websites, sondern auch dynamische, datenbankgestützte Webanwendungen entwickeln. Diese Kenntnisse halfen mir, mein Verständnis für die gesamte Architektur einer Website zu vertiefen, von der Datenbank bis hin zur Benutzeroberfläche.
+                        </p>
+                    </div>
+                
             </div> 
             
         </div>
         <!--Refernezobjekte Placeholder Section-->
-        <div id="MeineReferenzen" class=" Sectionbase"  style="height: 800px;">
+        <div id="MeineReferenzen" class=" Sectionbase">
             <h1>Refernezobjekte</h1>
             <div class="ReferenzGridContainer">
                 <div>
@@ -227,8 +221,9 @@
                 <div>
                     <div class="BubbleReferenzContainer bubblewavey3 ReferenzBubblePos2">
                         <div id="BubbleRef2" class="rounded BubbleReferenz bubblewigglanimation5" onclick="Popping6()">
-                            <div class="ReferenzBubbleText">
-                                TestReferenz
+                            <div class="ReferenzBubbleText"onclick="setTimeout(OpenRGRez, 800);">
+                                <p>Retro Game</p>
+                                <p>(Desktop Version)</p>
                             </div>
                         </div>
                         <div id="PubblePop6" class="miniBubbleContainer hidden">
@@ -237,7 +232,7 @@
                             <div class="miniBubble6 rounded miniBubblePosStart miniBubblePlop3"></div>
                             <div class="miniBubble4 rounded miniBubblePosStart miniBubblePlop4"></div>
                             <div class="miniBubble5 rounded miniBubblePosStart miniBubblePlop5"></div>
-                            <div class="tpaPos ReferenzBubbleText">TBA</div> 
+                            <div class="tpaPos ReferenzBubbleText"></div> 
                         </div>
                     </div>
                 </div>
@@ -245,7 +240,7 @@
                     <div class="BubbleReferenzContainer bubblewavey3 ReferenzBubblePos3">
                         <div id="BubbleRef3" class="rounded BubbleReferenz bubblewigglanimation7" onclick="Popping7()">
                             <div class="ReferenzBubbleText">
-                                TestReferenz
+                                TBA
                             </div>
                         </div>
                         <div id="PubblePop7" class="miniBubbleContainer hidden">
@@ -262,7 +257,7 @@
                     <div class="BubbleReferenzContainer bubblewavey3 ReferenzBubblePos4">
                         <div id="BubbleRef4" class="rounded BubbleReferenz bubblewigglanimation6" onclick="Popping8()">
                             <div class="ReferenzBubbleText">
-                                TestReferenz
+                                TBA
                             </div>
                         </div>
                         <div id="PubblePop8" class="miniBubbleContainer hidden">
@@ -279,7 +274,7 @@
                     <div class="BubbleReferenzContainer bubblewavey3 ReferenzBubblePos5">
                         <div id="BubbleRef5" class="rounded BubbleReferenz bubblewigglanimation5" onclick="Popping9()">
                             <div class="ReferenzBubbleText">
-                                TestReferenz
+                                TBA
                             </div>
                         </div>
                         <div id="PubblePop9" class="miniBubbleContainer hidden">
@@ -296,7 +291,7 @@
                     <div class="BubbleReferenzContainer bubblewavey3 ReferenzBubblePos6">
                         <div id="BubbleRef6" class="rounded BubbleReferenz bubblewigglanimation7" onclick="Popping10()">
                             <div class="ReferenzBubbleText">
-                                TestReferenz
+                                TBA
                             </div>
                         </div>
                         <div id="PubblePop10" class="miniBubbleContainer hidden">
@@ -316,11 +311,10 @@
             <h1>Kontakt</h1>
             <div class="KontaktStyle">
                 <div>
-                    Gerne können wir in einem persönlichen Beratungsgespräch <br> 
-                    über Ihre Vorstellungen und Wünsche zu Ihrem eigenen Internetauftritt reden. <br>
-                    Bei Interesse Erstellen wir zusammen einen Plan für ihr Website.<br>
-                    <br>
-                    Melden Sie sich!
+                    Ich würde mich freuen Sie in einem persönlichen Gespräch kennen zu lernen und mit Ihnen <br> 
+                    über Vorstellungen und Wünsche reden. <br>
+                    
+                    <br>                    
                     Gerne telefonisch oder per Mail.
                 </div>
                 <br><br>
@@ -329,13 +323,13 @@
                         <p>Waldfrieden 16, 37619 Hehlen</p>
                     </div>                
                     <div>
-                        <p><a href="tel:+49 5155 4004420" style="text-decoration: none; color: white;">+49 5155 4004420</a></p>
+                        <p><a href="tel:+49 5155 4004420" style="text-decoration: none; color: white;">+49 5155 4004422</a></p>
                     </div>                
                     <div>
-                        <p><a href="mailto:info@andreasfischer-webdesign.de"  style="text-decoration: none; color: rgb(166, 125, 255);">info@andreasfischer-webdesign.de</a></p>
+                        <p><a href="mailto:info@andreasfischer-webdesign.de"  style="text-decoration: none; color: rgb(166, 125, 255);">anditheke@outlook.de</a></p>
                     </div>                  
                     <div>
-                        <p>Montags - Freitags 16:30 - 18:30 Uhr</p>
+                        
                     </div>
                     <div>
                         <p>Rufen Sie mich an</p>

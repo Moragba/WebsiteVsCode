@@ -31,7 +31,8 @@ body{
     padding-top: 5rem;
     padding-left: 7rem;
     padding-right: 7rem;
-    height: 100vh;
+    padding-bottom: 5rem;
+    height: fit-content;
     color: white;
     background-color: transparent;
     overflow: hidden;
@@ -87,6 +88,35 @@ body{
     transition: 0.3s;
     
 }
+
+.navshow{
+    animation: navshowAnimation 0.8s ease;
+}
+.navScale1{
+   scale: 1; 
+}
+.navScale02{
+    scale: 0.2; 
+ }
+.navclose{
+    animation: navcloseAnimation 0.8 ease;
+}
+@keyframes navshowAnimation {
+    0% {
+		scale: 0.2;
+	}
+    100% {
+        scale: 1;
+	}    
+}
+@keyframes navcloseAnimation {
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 0.2;
+    }
+}
 .NavSection a:hover{
     scale: 1.1;    
 }
@@ -95,6 +125,27 @@ body{
     height: 960px;
     overflow: hidden;
 }
+
+#HeaderText1{
+    margin-top: 100px;
+    margin-left: 35%;
+}
+
+#HeaderText2{
+    margin-left: 5%;
+}
+#HeaderText3{
+    margin-left: 30%;
+}
+#HeaderText4{
+    margin-left: 5%;
+}
+#HeaderText5{
+    margin-left: 10%;
+}
+
+
+
 .imgherocontainer{
     position: relative;
     top: -400px;
@@ -176,9 +227,9 @@ body{
 
 .HeroText{
     position: absolute;
-    top: 80px;
-    left: 50px;
+    top: 5rem;
     color: white;
+    width: 90%;
 }
 .HeroText div{
     margin-bottom: 20px;
@@ -209,7 +260,7 @@ body{
     column-gap: 5rem;
 }
 .AboutmeGridContainer p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2.0rem;
 }
 
@@ -250,9 +301,11 @@ body{
 .SkillsGridContainer{
     height: auto;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 39vh 39vh;
     column-gap: 3rem;
-    justify-items: center;
+    row-gap: 3rem;
+    justify-items: left;
 }
 
 .BubbleSkillsContainer{
@@ -271,20 +324,16 @@ body{
     box-shadow: inset 0px 0px 10px 2px rgb(166, 125, 255);        
 }
 .SkillBubblePos1{
-    top: 5rem;
-    left: 2rem;
+    left:40%
 }
 .SkillBubblePos2{
-    top: 32rem;
+    left:50%
 }
 .SkillBubblePos3{
-    top: 9rem;
-    right: 8rem;
+    
 }
 .SkillBubblePos4{
-    top: 24rem;
-    right: 7rem;
-
+    left: 5%;
 }
 
 .SkillBubbleText{
@@ -298,7 +347,7 @@ body{
 }
 
 .ReferenzGridContainer{
-    height: auto;
+    height: 80vh;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     column-gap: unset;
@@ -353,7 +402,7 @@ color: unset;
 }
 
 .tpaPos{
-    padding-left: 65px;
+    padding-left: 5px;
 }
 .KontaktStyle, .KontaktStyle div p{
     font-size: 1.2rem;
@@ -373,11 +422,13 @@ color: unset;
 }
 .footeritem{
     display:block;
-    font-size: 1.2rem;
-    line-height: 2rem;    
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 .footeritem a{
     color: white;
+    text-decoration: none;    
+
 }
 
 .ImpressumStyle{
@@ -449,6 +500,7 @@ color: unset;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+
 }
 .custom-shape-divider-bottom-1724492113 svg {
     position: relative;
@@ -469,6 +521,7 @@ color: unset;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+
 }
 .custom-shape-divider-bottom-1724491730 svg {
     position: relative;
@@ -826,9 +879,8 @@ color: unset;
 }
 
 .Card{
-    position: absolute;
-    width: 280px;
-    height:calc(auto + 50px);
+    width: inherit;
+    height:auto;
     background-color: rgba(0, 0, 0, 0.12);
     border-radius: 3%;
     border:  rgba(0, 0, 0, 0.2) 5px solid;
@@ -838,27 +890,11 @@ color: unset;
     line-height: 1.8rem;
     padding-bottom: 50px;    
 }
-.Card1Pos{
-    top: -180px;
-    left: -30px;
-}
-.Card2Pos{
-    top: -240px;
-    left: -30px;
-}
-.Card3Pos{
-    top: -200px;
-    left: -40px;
-}
-.Card4Pos{
-    top: -230px;
-    left: -30px;
-}
 
 
 
 .CardSpawnCard1{
-    animation: CardSpawnanimation3 1s ease-out 0s 1 normal forwards;
+    animation: CardSpawnanimation3 0.8s ease-out 0s 1 normal forwards;
 }
 @keyframes CardSpawnanimation3 {
 	0% {
@@ -869,12 +905,12 @@ color: unset;
 	100% {
         scale: 1;
         opacity: 1;
-        transform: translate(0px, 150px);
+        transform: translate(0px, 0px);
 	}
 
 }
 .CardSpawnCard2{
-    animation: CardSpawnanimation1 1s ease-out 0s 1 normal forwards;
+    animation: CardSpawnanimation1 0.8s ease-out 0s 1 normal forwards;
 }
 @keyframes CardSpawnanimation1 {
 	0% {
@@ -887,14 +923,14 @@ color: unset;
 	100% {
         scale: 1;
         opacity: 1;
-        transform: translate(20px, -222px);
+        transform: translate(0px, 0px);
 
 	}
 
 }
 
 .CardSpawnCard3{
-    animation: CardSpawnanimation2 1s ease-out 0s 1 normal forwards;
+    animation: CardSpawnanimation2 0.8s ease-out 0s 1 normal forwards;
 }
 @keyframes CardSpawnanimation2 {
 	0% {
@@ -905,12 +941,12 @@ color: unset;
 	100% {
         scale: 1;
         opacity: 1;
-        transform: translate(150px, 105px);
+        transform: translate(0px, 0px);
 	}
 
 }
 .CardSpawnCard4{
-    animation: CardSpawnanimation4 1s ease-out 0s 1 normal forwards;
+    animation: CardSpawnanimation4 0.8s ease-out 0s 1 normal forwards;
 }
 @keyframes CardSpawnanimation4 {
 	0% {
@@ -923,7 +959,7 @@ color: unset;
 	100% {
         scale: 1;
         opacity: 1;
-        transform: translate(100px, -105px);
+        transform: translate(0px, 0px);
 
 	}
 
@@ -940,4 +976,250 @@ color: unset;
 
 .Card p{
     padding-left: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 1380px){
+
+    .bodybackgroundcontainer{
+        width: 100%;
+    }
+
+    .TrueBody{
+        width: 100%;
+    }
+
+    
+    .imgherocontainer{
+        display:none;            
+    }
+
+    .HeroText{
+        margin: auto;
+        width: min-content;
+        position: relative;
+        top: 12rem;       
+    }
+    .HeroText .Smallfont{
+        font-size: 1.5rem;
+    }
+    .HeroText .Bigfont{
+        font-size: 3.5rem;
+    }
+    #HeaderText5{
+        margin-left: unset;
+    }
+    .Sectionbase{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Sectionbase h1{
+        font-size: 2rem;
+    }
+    .custom-shape-divider-bottom-1724492903 {
+        Display: none;
+    }    
+    .custom-shape-divider-bottom-1724492113 {
+        Display: none;
+    }    
+    .custom-shape-divider-bottom-1724491730 {
+        Display: none;
+    }
+    #AboutImage{
+        display: none;
+    }
+    .AboutmeGridContainer{
+        column-gap: 0rem;
+        grid-template-columns: auto;
+
+    }
+    .BubbleSkillsContainer{
+        height: 10rem;
+        width: 10rem;
+    }
+    .SkillsGridContainer{
+        grid-template-rows: 70vh 70vh;
+    }
+    .SkillBubbleText {
+        font-size: 1rem;
+    }
+
+    .ReferenzGridContainer{
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        row-gap: 10rem;
+    }
+    .ReferenzBubblePos1{
+        top: 5rem;
+        left: 0rem;
+    }
+    .ReferenzBubblePos2{
+        top: 0rem;
+        left: 3rem;
+    }
+    .ReferenzBubblePos3{
+        top: 8rem;
+        left: 2rem;
+    }
+    .ReferenzBubblePos4{
+        top: 3rem;
+        left: -3rem;
+    }
+    .ReferenzBubblePos5{
+        top: 5rem;
+        left: 1rem;
+    }
+    .ReferenzBubblePos6{
+        top: 10rem;
+        left: -3rem;
+    }
+
+}
+
+@media only screen and (max-width: 790px){
+
+    .SkillsGridContainer{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+
+    }
+
+    .SkillBubblePos1{
+        left:40%
+    }
+    .SkillBubblePos2{
+        left:unset
+    }
+    .SkillBubblePos3{        
+        left:50%
+    }
+    .SkillBubblePos4{
+        left: 5%;
+    }
+    .ReferenzGridContainer{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        row-gap: 10rem;
+    }
+    .ReferenzBubblePos1{
+        top: unset;
+        left: 0%;
+    }
+    .ReferenzBubblePos2{
+        top: unset;
+        left: 80%;
+    }
+    .ReferenzBubblePos3{
+        top: unset;
+        left: -30%;
+    }
+    .ReferenzBubblePos4{
+        top: unset;
+        left: -80%;;
+    }
+    .ReferenzBubblePos5{
+        top: unset;
+        left: 70%;
+    }
+    .ReferenzBubblePos6{
+        top: unset;
+        left: -50%;
+    }
+
+
+    
+    .BubblePos1{
+        top:220px;    left:33%;
+    }
+    .BubblePos2{
+        top:350px;    left:45%;
+    }
+    .BubblePos3{
+        top:150px;    left:7%;
+    }
+    .BubblePos4{
+        top:640px;    left:76%;
+    }
+    .BubblePos5{
+        top:250px;    left:73%;
+    }
+    .BubblePos6{
+        top:600px;    left:25%;
+    }
+    .BubblePos7{
+        top:675px;    left:35%;
+    }
+    .BubblePos8{
+        top:700px;    left:11%;
+    }
+    .BubblePos9{
+        top:490px;    left:13%;
+    }
+    .BubblePos10{
+        top:500px;    left:72%;
+    }
+    .BubblePos11{
+        top:470px;    left:64%;
+    }
+    .BubblePos12{
+        top:420px;    left:5%;
+    }
+
+
+    .NavSection{
+        font-size: 0.8rem;
+        text-wrap: nowrap;
+        justify-content:unset; 
+        display: grid;
+
+        width: 180px;
+        height: 180px;
+        border-radius: 100%;
+        background-color: rgba(132, 75, 255, 0.9);
+        position: fixed;
+        z-index: 99;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px){
+    .BubblePos1{
+        top:220px;    left:13%;
+    }
+    .BubblePos2{
+        top:350px;    left:25%;
+    }
+    .BubblePos3{
+        top:150px;    left:7%;
+    }
+    .BubblePos4{
+        top:640px;    left:56%;
+    }
+    .BubblePos5{
+        top:250px;    left:53%;
+    }
+    .BubblePos6{
+        top:600px;    left:15%;
+    }
+    .BubblePos7{
+        top:675px;    left:25%;
+    }
+    .BubblePos8{
+        top:700px;    left:1%;
+    }
+    .BubblePos9{
+        top:490px;    left:7%;
+    }
+    .BubblePos10{
+        top:500px;    left:52%;
+    }
+    .BubblePos11{
+        top:470px;    left:34%;
+    }
+    .BubblePos12{
+        top:420px;    left:5%;
+    }
 }

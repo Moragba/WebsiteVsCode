@@ -2,8 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    background-image: url(/PrincessBackery/PrincesBackery\ Design.png);
-    background-repeat: no-repeat;
-    height: 7430px;
+img{
+    width: 100%;
 }
+

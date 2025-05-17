@@ -1,3 +1,28 @@
+const navbar = document.getElementById("Navbar")
+
+
+function NavToggler(){
+	if(window.innerWidth < 790 && !navbar.classList.contains("navshow")){
+		navbar.classList.add("navshow")
+		navbar.classList.add("navScale1")
+		
+		
+		navbar.classList.remove("navclose")
+		navbar.classList.remove("navScale02")
+	}else{
+		navbar.classList.add("navclose")
+		navbar.classList.add("navScale02")
+		navbar.classList.remove("navshow")
+	}
+
+}
+
+
+
+
+
+
+
 const htmlQuery = document.querySelectorAll("html")
 const transformable1 = document.querySelectorAll(".transformable1")
 const transformable2 = document.querySelectorAll(".transformable2")
@@ -102,6 +127,7 @@ function Popping1(){
 	BPop1.classList.remove("hidden")
 	Card1.classList.remove("hidden")
 	Card1.classList.add("CardSpawnCard1")
+	BSkill1Cont.classList.add("hidden")	
 }
 
 let	BSkill2 = document.getElementById("BubbleSkill2")
@@ -113,6 +139,8 @@ function Popping2(){
 	BPop2.classList.remove("hidden")
 	Card2.classList.remove("hidden")
 	Card2.classList.add("CardSpawnCard2")
+	BSkill2Cont.classList.add("hidden")
+
 }
 
 let	BSkill3 = document.getElementById("BubbleSkill3")
@@ -124,6 +152,7 @@ function Popping3(){
 	BPop3.classList.remove("hidden")
 	Card3.classList.remove("hidden")
 	Card3.classList.add("CardSpawnCard3")
+	BSkill3Cont.classList.add("hidden")	
 }
 
 let	BSkill4 = document.getElementById("BubbleSkill4")
@@ -135,6 +164,7 @@ function Popping4(){
 	BPop4.classList.remove("hidden")
 	Card4.classList.remove("hidden")
 	Card4.classList.add("CardSpawnCard4")
+	BSkill4Cont.classList.add("hidden")
 }
 
 
@@ -187,13 +217,58 @@ function Popping10(){
 }
 
 
+const cardsAll = document.querySelectorAll(".Card")
+const BSkill1Cont = document.getElementById("BubbleSkill1Cont")
+const BSkill2Cont = document.getElementById("BubbleSkill2Cont")
+const BSkill3Cont = document.getElementById("BubbleSkill3Cont")
+const BSkill4Cont = document.getElementById("BubbleSkill4Cont")
+
+
+cardsAll.forEach((c) => {
+	c.addEventListener("click",(e) =>{
+		e.currentTarget.classList.add("hidden")
+
+		if(e.currentTarget.classList.contains("Card1Pos")){
+			BSkill1.classList.remove("hidden")
+			BPop1.classList.add("hidden")
+			BSkill1Cont.classList.remove("hidden")						
+		}
+		if(e.currentTarget.classList.contains("Card2Pos")){
+			BSkill2.classList.remove("hidden")
+			BPop2.classList.add("hidden")
+			BSkill2Cont.classList.remove("hidden")
+		}
+		if(e.currentTarget.classList.contains("Card3Pos")){
+			BSkill3.classList.remove("hidden")
+			BPop3.classList.add("hidden")
+			BSkill3Cont.classList.remove("hidden")
+		}
+		if(e.currentTarget.classList.contains("Card4Pos")){
+			BSkill4.classList.remove("hidden")
+			BPop4.classList.add("hidden")
+			BSkill4Cont.classList.remove("hidden")
+		}
+		
+		
+	})}
+)
+	 
+
+
+
+
 
 function OpenPBRez(){
 	window.open('../PrincessBackery/PrincessBackery.html')
 }
+function OpenRGRez(){
+	window.open('../RetroGame/RetroGame.html')
+}
 function AlertDisclaimer(){
 	confirm("Disclaimer. Der Inhalt dieser Seite ist lediglich ein Muster eines Designs. Keine der hier gezeigten Inhalte ist echt und dient nur der Veranschaulichung eines Designbeispiels.")
 }
+
+
 
 
 
