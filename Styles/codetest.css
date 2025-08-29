@@ -1,0 +1,52 @@
+.code-body {
+    background: #1e1e1e00; 
+    color: #d4d4d47e; 
+    font-family: 'Fira Code', monospace;    
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    position: relative;   
+    top: 5rem;
+    left: 10rem;
+    height: 40rem;
+    
+}
+
+  .code-container {
+    font-size: 1.2em;
+    line-height: 1.5;
+    white-space: pre;
+    overflow: hidden;
+  }
+  
+
+  /* Syntax-Highlighting */
+  .keyword { color: #569cd66c; }
+  .type { color: #4ec9b08f; }
+  .string { color: #cf8569; }
+  .comment { color: #6A9955; font-style: italic; }
+  .object { color: #3f9d147e; font-style: italic; }
+  .new { color: #68356d7e; font-style: italic; }
+  .custom { color: #3f9d147e; font-style: italic; }
+
+  .function { color: #dcdcaabd; }
+
+
+.pixel-image {
+    position: relative;   
+    top: 15rem;
+    left: 75rem;
+
+  width: 400px;
+  height: 600px;
+  background: url('/Images/HeroImage1.jpg') no-repeat center/cover;
+  filter: blur(20px);          /* Start unscharf */
+  transition: filter 2s ease;  /* Animation über 2 Sekunden */
+}
+
+.pixel-image.sharp {
+  filter: blur(0);             /* Endwert: scharf */
+}
+
+
+

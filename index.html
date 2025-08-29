@@ -5,65 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/main.css">
     <title>Andreas Fischer Portfolio</title>
-    <!--
-    <link rel="icon" href="/Images/AFW_Logo.svg" sizes="any" type="image/svg+xml">
-    <script id="usercentrics-cmp" async data-eu-mode="true" data-settings-id="iU_IlWssHmSvSP" src="https://app.eu.usercentrics.eu/browser-ui/latest/loader.js"></script>    
-    <script type="application/javascript" src="https://sdp.eu.usercentrics.eu/latest/uc-block.bundle.js"></script>
-    <script type="application/javascript"> var UC_UI_SUPPRESS_CMP_DISPLAY=true;</script>
-    -->
+    <script defer type="application/javascript" src="/Scripts/klaro.js"></script>    
+    <!--<script defer data-config="klaroConfig" src="/Scripts/klarosc.js"></script>-->
+    <link rel="stylesheet" href="/Styles/klaro.css" />
+
+    <link rel="stylesheet" href="/Styles/codetest.css">
+    <script defer type="application/javascript" src="/Scripts/codetest.js"></script>  
+
+
 </head>
 <body>
 
-    <div Class ="TrueBody" > 
+    <div> 
         <!--Nav Section--><!--insert nav toggler on click-->
-        <div id="Navbar" Class="NavSection navScale1" onclick="">
-            <a href="#ÜberMich">Über mich</a>
-            <a href="#Hardskills">Hardskills</a>
-            <a href="#Softskills">Softskills</a>
-            <a href="#Module">Module</a>
-            <a href="#Kontakt">Kontakt</a>
-        </div>
+        <div id="Navbar" Class="NavSection navScale1">
+            <a href="#ÜberMich">ueberMich();</a>
+            <a href="#Hardskills">hardskills();</a>
+            <a href="#Softskills">softskills();</a>
+            <a href="#Module">module();</a>
+            <a href="#Kontakt">kontakt();</a>
+        </div>        
         
         <!--Hero Section-->
-        <div class="HeroSection">
-            <div class="imgherocontainer rounded">
+        <div class="HeroSection">  
+            <div class="pixel-image"></div>                       
+            <div Class="HeroText">                
+                <div id="header_code" class="code-container code-body code-line"></div>
             </div>
-             
-                       
-            <div Class="HeroText">
-                <div id="HeaderText1" class="Smallfont TextGradient1" ></div>
-                <div id="HeaderText2" class="Bigfont TextGradient2">Andreas</div>
-                <div id="HeaderText3" class="Bigfont TextGradient1">Fischer</div>
-                
-            </div>
-
-
-            <div class="custom-shape-divider-bottom-1724492903 WaveAnimation3">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="custom-shape-divider-bottom-1724492113 WaveAnimation2">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                </svg>
-            </div>    
-            <div class="custom-shape-divider-bottom-1724491730 WaveAnimation1">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                </svg>
-            </div>
-            
-
-
-
-        </div> 
+        </div>                   
         
         <!--Über Mich Section-->
         <div id="ÜberMich" class="Sectionbase radiantbakcgroundbot" style="height: auto;">
-            <h1>Über mich</h1>
+            <h1>überMich();</h1>            
             <div class="AboutmeGridContainer">
-                <div>
+                <div id="about_code" class="code-container code-body code-line"></div>
+                <!--<div>
                     <p>Ich bin Andreas Fischer,</p>
                     <br>
                     <p>Student der Softwarearchitektur mit Schwerpunkt auf Softwareentwicklung und modernen Systemarchitekturen.</p>
@@ -73,7 +49,7 @@
                     <p>Besonderen Fokus lege ich aktuell auf die Programmiersprache Java, mit der ich intensiv arbeite.</p>
                     <p>Ergänzend bringe ich Erfahrung mit C# und Python mit.</p>
                     <br>
-                    <p>Durch kleinere Projekte und praktische Übungen konnte ich erste Erfahrungen in der Webentwicklung (HTML, CSS, JavaScript, PHP)</p>
+                    <p>Durch kleinere Projekte und praktische Übungen konnte ich erste Erfahrungen in der Webentwicklung (HTML, CSS, JavaScript)</p>
                     <p>sowie im Datenbankdesign und -zugriff sammeln. </p>
                     <p>Dabei habe ich gelernt, Softwarelösungen systematisch zu planen, zu strukturieren und umzusetzen.</p>
                     <br>
@@ -87,23 +63,16 @@
                     <p>Wenn Sie einen engagierten Entwickler suchen, der solides technisches Know-how mitbringt und bereit ist, Verantwortung zu übernehmen, </p>
                     <p>freue ich mich auf Ihre Kontaktaufnahme.</p>
 
-                </div>
-                <div id="AboutImage">
-                    <div class="BubbleContainer bubblewavey3">
-                        <div class="rounded Bubble">
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            
-        </div>
+                </div>-->
+            </div>             
+        </div>        
 
         <!--Meine (Hard)Skills Section-->
         <div id="Hardskills" class="Sectionbase radiantbakcgroundtop">
-            <h1>Hardskills</h1>
-            <div class="SkillsGridContainer">  
-                    <div class="Card">
+            <h1>hardskills();</h1>
+            <div class="SkillsGridContainer"> 
+                <div id="skills_s_code" class="code-container code-body code-line"></div> 
+                <!--<div class="Card">
                         <h1>Java (Fokus)</h1>
                         <p>Programmiersprachen & Technologien</p>
                     </div>
@@ -118,11 +87,7 @@
                     <div class="Card">
                         <h1>HTML, CSS, JavaScript (Grundlagen in der Webentwicklung)</h1>
                         <p>Programmiersprachen & Technologien</p>                   
-                    </div>
-                    <div class="Card">
-                        <h1>PHP (Basis)</h1>
-                        <p>Programmiersprachen & Technologien</p>
-                    </div>
+                    </div>                    
                     <div class="Card">
                         <h1>SQL / Datenbankzugriff</h1>
                         <p>Programmiersprachen & Technologien</p>
@@ -159,14 +124,16 @@
                         <h1>Grundlegende Kenntnisse agiler Entwicklungsmethoden (Scrum, Kanban)</h1>
                         <p>Konzepte & Methoden</p>
                     </div>
-                
-            </div> 
-            
+                -->
+            </div>             
         </div>
+
         <!--Meine (Soft)Skills Section-->
         <div id="Softskills" class="Sectionbase">
-            <h1>Softskills</h1>
-            <div class="SkillsGridContainer">  
+            <h1>softskills();</h1>
+            <div class="SkillsGridContainer">
+                <div id="skills_h_code" class="code-container code-body code-line"></div> 
+                <!--  
                     <div class="Card">
                         <h1>Analytisches Denken</h1>
                         <p>Fähigkeit, komplexe Anforderungen zu durchdringen und in strukturierte Lösungen zu überführen.</p>
@@ -187,18 +154,24 @@
                         <h1>Strukturierte Arbeitsweise</h1>
                         <p>Klare Priorisierung und planvolles Vorgehen – insbesondere in der Softwareentwicklung ein Plus.</p>
                     </div>
-                
-            </div> 
-            
+                -->
+            </div>             
         </div>
+
         <!--Refernezobjekte Placeholder Section-->
         <div id="Module" class=" Sectionbase">
-            <h1>Module</h1>
+            <h1>module();</h1>
             <div class="SkillsGridContainer">  
+            <div id="modul_code" class="code-container code-body code-line"></div> 
+            <!--<div class="Card">
+                        <h1>Programmieren mit Java</h1>
+                        <p>Programmieren mit Java, Klassen, Methoden, Interfaces und Fehlerbehandlung.</p>
+                        <h1 style="text-align: end;">Note: 1.7</h1>
+                    </div>                
                     <div class="Card">
-                        <h1>Einführung in die Informatik</h1>
-                        <p>Grundlagen der Informatik, digitale Systeme und erste Programmierkonzepte.</p>
-                        <h1 style="text-align: end;">Note: 3.0</h1>
+                        <h1>Technische Grundlagen von Datenbanksystemen</h1>
+                        <p>Interna von Datenbanksystemen, Indexstrukturen, Transaktionen, Speicherverwaltung.</p>
+                        <h1 style="text-align: end;">Note: 1.0</h1>
                     </div>
                     <div class="Card">
                         <h1>Software Engineering</h1>
@@ -221,25 +194,22 @@
                         <h1 style="text-align: end;">Note: 1.0</h1>
                     </div>
                     <div class="Card">
+                        <h1>Einführung in die Informatik</h1>
+                        <p>Grundlagen der Informatik, digitale Systeme und erste Programmierkonzepte.</p>
+                        <h1 style="text-align: end;">Note: 3.0</h1>
+                    </div>
+                    <div class="Card">
                         <h1>Theoretische Grundlagen von Datenbanksystemen</h1>
                         <p>Relationale Modelle, Normalformen und Abfragesprachen wie SQL.</p>
                         <h1 style="text-align: end;">Note: 1.0</h1>
                     </div>
-                    <div class="Card">
-                        <h1>Technische Grundlagen von Datenbanksystemen</h1>
-                        <p>Interna von Datenbanksystemen, Indexstrukturen, Transaktionen, Speicherverwaltung.</p>
-                        <h1 style="text-align: end;">Note: 1.0</h1>
-                    </div>
-                    <div class="Card">
-                        <h1>Programmieren mit Java</h1>
-                        <p>Programmieren mit Java, Klassen, Methoden, Interfaces und Fehlerbehandlung.</p>
-                        <h1 style="text-align: end;">Note: 1.7</h1>
-                    </div>                
+                    -->
             </div>   
         </div>
+
         <!--Kontakt Placeholder Section-->
         <div id="Kontakt" class=" Sectionbase" style="height: auto;">
-            <h1>Kontakt</h1>
+            <h1>kontakt();</h1>
             <div class="KontaktStyle">
                 <div>
                     Ich würde mich freuen Sie in einem persönlichen Gespräch kennen zu lernen und mit Ihnen <br> 
@@ -257,7 +227,7 @@
                         <p><a href="tel:+49 5155 4004420" style="text-decoration: none; color: white;">+49 5155 4004422</a></p>
                     </div>                
                     <div>
-                        <p><a href="mailto:mail@andreasfischer-portfolio.de"  style="text-decoration: none; color: rgb(166, 125, 255);">anditheke@outlook.de</a></p>
+                        <p><a href="mailto:mail@andreasfischer-portfolio.de"  style="text-decoration: none; color: grey;">andreasfischer-portfolio.de</a></p>
                     </div>                  
                     <div>
                         
@@ -276,7 +246,7 @@
                 <div class="footeritem">
                     <a href="/Impressum.html">Impressum</a><br>
                     <a href="/Datenschutz.html">Datenschutz</a><br>
-                    <a href="javascript:UC_UI.showSecondLayer();">Cookie-Einstellungen</a><br>
+                    <a href="#" onclick=klaro.show(); return false>Cookie-Einstellungen</a><br>
                 </div>
 
             </div>
@@ -286,188 +256,7 @@
             
     </div>  
 
-<!--Backgroundbubbles-->
-<div>
-    <!--Placeholder Section-->
-    <div style="height: 100vh; width: auto;">
-            
-    </div>
-    <div class="bodybackgroundcontainer">
 
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos1 bubblewavey1">
-                <div class="rounded bubblewigglanimation1 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos2 bubblewavey2">
-                <div class=" rounded bubblewigglanimation2 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos3 bubblewavey1">
-                <div class="rounded bubblewigglanimation3 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos4 bubblewavey2">
-                <div class="rounded bubblewigglanimation2 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos5 bubblewavey1">
-                <div class="rounded bubblewigglanimation4 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos6 bubblewavey2">
-                <div id="bubble2" class="rounded bubblewigglanimation1 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos7 bubblewavey1">
-                <div class="rounded bubblewigglanimation2 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos8 bubblewavey1">
-                <div class="rounded bubblewigglanimation4 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos9 bubblewavey2">
-                <div class="rounded bubblewigglanimation2 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos10 bubblewavey1">
-                <div class="rounded bubblewigglanimation3 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos11 bubblewavey2">
-                <div class="rounded bubblewigglanimation2 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>    
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos12 bubblewavey1">
-                <div class="rounded bubblewigglanimation1 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>  
-    </div>
-    <div class="bodybackgroundcontainer">
-
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos1 bubblewavey1">
-                <div class="rounded bubblewigglanimation1 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos2 bubblewavey2">
-                <div class=" rounded bubblewigglanimation2 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos3 bubblewavey1">
-                <div class="rounded bubblewigglanimation3 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos4 bubblewavey2">
-                <div class="rounded bubblewigglanimation2 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos5 bubblewavey1">
-                <div class="rounded bubblewigglanimation4 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos6 bubblewavey2">
-                <div id="bubble2" class="rounded bubblewigglanimation1 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos7 bubblewavey1">
-                <div class="rounded bubblewigglanimation2 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos8 bubblewavey1">
-                <div class="rounded bubblewigglanimation4 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos9 bubblewavey2">
-                <div class="rounded bubblewigglanimation2 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos10 bubblewavey1">
-                <div class="rounded bubblewigglanimation3 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div id="bubble1" class="transformable1">
-            <div class="nav2Container BubblePos11 bubblewavey2">
-                <div class="rounded bubblewigglanimation2 nav2">
-                    <div></div>
-                </div>
-            </div>
-        </div>    
-        <div id="bubble2" class="transformable2">
-            <div class="nav3Container BubblePos12 bubblewavey1">
-                <div class="rounded bubblewigglanimation1 nav3">
-                    <div></div>
-                </div>
-            </div>
-        </div>  
-    </div>
-
-</div>
 
 
 </body>
