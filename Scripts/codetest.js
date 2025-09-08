@@ -64,23 +64,23 @@ const skills_h_codeLines = [
 "\tSystem.out.println(\"=== Hardskills ===\");\n",
 
 "\tSystem.out.println(\"Programmiersprachen & Technologien:\");",
-"\tSystem.out.println(\"  - Java (Fokus)\");",
-"\tSystem.out.println(\"  - C# (Grundkenntnisse)\");",
-"\tSystem.out.println(\"  - Python (Grundkenntnisse)\");",
-"\tSystem.out.println(\"  - HTML, CSS, JavaScript (Grundlagen in der Webentwicklung)\");",
-"\tSystem.out.println(\"  - SQL / Datenbankzugriff\");\n",
+"\t\tSystem.out.println(\"  - Java (Fokus)\");",
+"\t\tSystem.out.println(\"  - C# (Grundkenntnisse)\");",
+"\t\tSystem.out.println(\"  - Python (Grundkenntnisse)\");",
+"\t\tSystem.out.println(\"  - HTML, CSS, JavaScript (Grundlagen in der Webentwicklung)\");",
+"\t\tSystem.out.println(\"  - SQL / Datenbankzugriff\");\n",
 
 "\tSystem.out.println(\"Tools & Entwicklungsumgebung:\");",
-"\tSystem.out.println(\"  - Git / Versionskontrolle\");",
-"\tSystem.out.println(\"  - IDEs: Visual Studio, VS Code\");\n",
+"\t\tSystem.out.println(\"  - Git / Versionskontrolle\");",
+"\t\tSystem.out.println(\"  - IDEs: Visual Studio, VS Code\");\n",
 
 "\tSystem.out.println(\"Konzepte & Methoden:\");",
-"\tSystem.out.println(\"  - Objektorientierte Programmierung (OOP)\");",
-"\tSystem.out.println(\"  - Datenstrukturen und Algorithmen\");",
-"\tSystem.out.println(\"  - UML & modellbasierte Softwareentwicklung\");",
-"\tSystem.out.println(\"  - Grundlagen in Software Engineering / Clean Code\");",
-"\tSystem.out.println(\"  - Relationale Datenbanken (z.B. MySQL, SQL)\");",
-"\tSystem.out.println(\"  - Grundlegende Kenntnisse agiler Entwicklungsmethoden (Scrum, Kanban)\");",
+"\t\tSystem.out.println(\"  - Objektorientierte Programmierung (OOP)\");",
+"\t\tSystem.out.println(\"  - Datenstrukturen und Algorithmen\");",
+"\t\tSystem.out.println(\"  - UML & modellbasierte Softwareentwicklung\");",
+"\t\tSystem.out.println(\"  - Grundlagen in Software Engineering / Clean Code\");",
+"\t\tSystem.out.println(\"  - Relationale Datenbanken (z.B. MySQL, SQL)\");",
+"\t\tSystem.out.println(\"  - Grundlegende Kenntnisse agiler Entwicklungsmethoden (Scrum, Kanban)\");",
 "}"
 ];
 
@@ -90,19 +90,19 @@ const skills_s_codeLines = [
 "\tSystem.out.println(\"=== Softskills ===\");\n",
 
 "\tSystem.out.println(\"Analytisches Denken:\");",
-"\tSystem.out.println(\"  - Fähigkeit, komplexe Anforderungen zu durchdringen und in strukturierte Lösungen zu überführen.\");\n",
+"\t\tSystem.out.println(\"  - Fähigkeit, komplexe Anforderungen zu durchdringen und in strukturierte Lösungen zu überführen.\");\n",
 
 "\tSystem.out.println(\"Lernbereitschaft:\");",
-"\tSystem.out.println(\"  - Neue Technologien und Konzepte schnell erfassen und anwenden.\");\n",
+"\t\tSystem.out.println(\"  - Neue Technologien und Konzepte schnell erfassen und anwenden.\");\n",
 
 "\tSystem.out.println(\"Eigenverantwortung:\");",
-"\tSystem.out.println(\"  - Selbstständiges Arbeiten, insbesondere bei Projekt- oder Studienarbeiten.\");\n",
+"\t\tSystem.out.println(\"  - Selbstständiges Arbeiten, insbesondere bei Projekt- oder Studienarbeiten.\");\n",
 
 "\tSystem.out.println(\"Teamfähigkeit:\");",
-"\tSystem.out.println(\"  - Offenheit für Feedback, Zusammenarbeit in Gruppen (z.B. bei Uni-Projekten oder Coding Challenges).\");\n",
+"\t\tSystem.out.println(\"  - Offenheit für Feedback, Zusammenarbeit in Gruppen (z.B. bei Uni-Projekten oder Coding Challenges).\");\n",
 
 "\tSystem.out.println(\"Strukturierte Arbeitsweise:\");",
-"\tSystem.out.println(\"  - Klare Priorisierung und planvolles Vorgehen - insbesondere in der Softwareentwicklung ein Plus.\");",
+"\t\tSystem.out.println(\"  - Klare Priorisierung und planvolles Vorgehen - insbesondere in der Softwareentwicklung ein Plus.\");",
 "}"
 ];
 
