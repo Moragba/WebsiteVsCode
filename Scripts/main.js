@@ -113,7 +113,6 @@ const options2 = {
 const AboutIMGobserver = new IntersectionObserver(callback3, options2)
 const AboutImage = document.getElementById("AboutImage")
 
-AboutIMGobserver.observe(AboutImage)
 
 
 //Popping mini Bubble Script &Visisbilty and hide by click

@@ -206,8 +206,8 @@ to create a white background.
 .klaro .cookie-modal .cm-list-label input:focus + .slider,
 .klaro .context-notice .cm-list-label input:focus + .slider,
 .klaro .cookie-notice .cm-list-label input:focus + .slider {
-  box-shadow-color: rgba(132, 75, 255, 1)!important;
-  box-shadow-color: var(--green3, rgba(132, 75, 255, 1)!important);
+  box-shadow-color: rgb(149, 149, 149)!important;
+  box-shadow-color: var(--green3, rgb(157, 157, 157)!important);
   box-shadow: 0 0 1px var(--box-shadow-color, green3);
 }
 .klaro .cookie-modal .cm-list-label input:checked + .slider::before,
@@ -235,8 +235,8 @@ to create a white background.
 .klaro .cookie-modal a,
 .klaro .context-notice a,
 .klaro .cookie-notice a {
-  color: rgba(132, 75, 255, 1)!important;
-  color: var(--green1, rgba(132, 75, 255, 1))!important;
+  color: grey!important;
+  color: var(--green1, grey)!important;
   text-decoration: none;
 }
 .klaro .cookie-modal p,
@@ -338,20 +338,20 @@ to create a white background.
 .klaro .cookie-modal .cm-btn.cm-btn-success,
 .klaro .context-notice .cm-btn.cm-btn-success,
 .klaro .cookie-notice .cm-btn.cm-btn-success {
-  background-color: rgba(132, 75, 255, 1)!important;
-  background-color: var(--green1, rgba(132, 75, 255, 1))!important;
+  background-color: grey!important;
+  background-color: var(--green1, grey)!important;
 }
 .klaro .cookie-modal .cm-btn.cm-btn-success-var,
 .klaro .context-notice .cm-btn.cm-btn-success-var,
 .klaro .cookie-notice .cm-btn.cm-btn-success-var {
-  background-color: rgba(132, 75, 255, 1)!important;
-  background-color: var(--green2, rgba(132, 75, 255, 1))!important;
+  background-color: grey!important;
+  background-color: var(--green2, grey)!important;
 }
 .klaro .cookie-modal .cm-btn.cm-btn-info,
 .klaro .context-notice .cm-btn.cm-btn-info,
 .klaro .cookie-notice .cm-btn.cm-btn-info {
-  background-color: rgba(132, 75, 255, 1)!important;
-  background-color: var(--blue1, rgba(132, 75, 255, 1))!important;
+  background-color: grey!important;
+  background-color: var(--blue1, grey)!important;
 }
 .klaro .context-notice {
   border-radius: 4px;

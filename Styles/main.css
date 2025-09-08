@@ -25,10 +25,10 @@ body{
 }
 
 .Sectionbase{
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-left: 7rem;
     padding-right: 7rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     height: fit-content;
     color: black;
     font-weight: 900;
@@ -37,11 +37,12 @@ body{
 }
 
 .Sectionbase h1{
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 3rem;
     color:  grey;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: rgb(45, 45, 45);
     text-decoration-thickness: 5px;
 }
     
@@ -216,22 +217,6 @@ body{
     overflow: hidden;
 }
 
-
-.HeroText{
-    position: absolute;
-    top: 5rem;
-    color: black;
-    width: 90%;
-}
-.HeroText div{
-    margin-bottom: 20px;
-}
-.HeroText .Smallfont{
-    font-size: 1.5rem;
-}
-.HeroText .Bigfont{
-    font-size: 8rem;
-}
 .TextGradient1{
     background: linear-gradient(grey 0%, black 100%);
     -webkit-background-clip: text;
@@ -390,9 +375,9 @@ color: unset;
 .footerStyle{
     height: 250px;
     padding-top: 0px;
-    margin-top: 150px;
 }
 .footergrid{
+    margin-top: 10%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -405,7 +390,7 @@ color: unset;
     line-height: 1.5rem;
 }
 .footeritem a{
-    color: white;
+    color: grey;
     text-decoration: none;    
 
 }
@@ -418,23 +403,25 @@ color: unset;
     font-size: 1.2rem;
     line-height: 2rem;
 }
-.Sectionbase h2{
+.Sectionbase h2{    
     padding-left: 0px;
     padding-top: 10px;
     margin-bottom: 1.2rem;
     margin-top: 2.5rem;
     font-size: 2rem;
-    color:  rgb(166, 125, 255);
+    color:  grey;
     text-decoration: none;
 }
 .Sectionbase h3{
-    color:  rgb(87, 49, 170);
+    padding-top: 10px;
+    color:  rgb(156, 156, 156);
 }
 .Sectionbase h4{
-    color:  rgb(68, 19, 174);
+    padding-top: 15px;
+    color:  rgb(168, 168, 168);
 }
 
-.bluredbackground{
+.bluredbackground{    
     background-image: linear-gradient(360deg, rgba(132, 75, 255, 0) 0%, rgba(132, 75, 255, 0.2) 100% );;
 
 }

@@ -1,245 +1,67 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <title>Andreas Fischer Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/main.css">
-    <title>Andreas Fischer Portfolio</title>
+    <link rel="stylesheet" href="/Styles/klaro.css" />
+    <link rel="stylesheet" href="/Styles/codetest.css">
     <script defer type="application/javascript" src="/Scripts/klaro.js"></script>    
     <!--<script defer data-config="klaroConfig" src="/Scripts/klarosc.js"></script>-->
-    <link rel="stylesheet" href="/Styles/klaro.css" />
-
-    <link rel="stylesheet" href="/Styles/codetest.css">
-    <script defer type="application/javascript" src="/Scripts/codetest.js"></script>  
-
-
+    <script defer type="application/javascript" src="/Scripts/codetest.js"></script> 
 </head>
-<body>
-
-    <div> 
-        <!--Nav Section--><!--insert nav toggler on click-->
+<body>    
         <div id="Navbar" Class="NavSection navScale1">
+            <a href="#hero">main();</a>
             <a href="#ÜberMich">ueberMich();</a>
             <a href="#Hardskills">hardskills();</a>
             <a href="#Softskills">softskills();</a>
             <a href="#Module">module();</a>
             <a href="#Kontakt">kontakt();</a>
-        </div>        
-        
-        <!--Hero Section-->
-        <div class="HeroSection">  
-            <div class="pixel-image"></div>                       
-            <div Class="HeroText">                
-                <div id="header_code" class="code-container code-body code-line"></div>
-            </div>
-        </div>                   
-        
-        <!--Über Mich Section-->
-        <div id="ÜberMich" class="Sectionbase radiantbakcgroundbot" style="height: auto;">
-            <h1>überMich();</h1>            
-            <div class="AboutmeGridContainer">
-                <div id="about_code" class="code-container code-body code-line"></div>
-                <!--<div>
-                    <p>Ich bin Andreas Fischer,</p>
-                    <br>
-                    <p>Student der Softwarearchitektur mit Schwerpunkt auf Softwareentwicklung und modernen Systemarchitekturen.</p>
-                    <br>
-                    <p>Im Rahmen meines Studiums habe ich bereits fundierte Kenntnisse in den Bereichen objektorientierte Programmierung, </p>
-                    <p>Datenstrukturen und Algorithmen, Datenbanksysteme, Unified Modeling Language (UML) sowie Software Engineering erworben. </p>
-                    <p>Besonderen Fokus lege ich aktuell auf die Programmiersprache Java, mit der ich intensiv arbeite.</p>
-                    <p>Ergänzend bringe ich Erfahrung mit C# und Python mit.</p>
-                    <br>
-                    <p>Durch kleinere Projekte und praktische Übungen konnte ich erste Erfahrungen in der Webentwicklung (HTML, CSS, JavaScript)</p>
-                    <p>sowie im Datenbankdesign und -zugriff sammeln. </p>
-                    <p>Dabei habe ich gelernt, Softwarelösungen systematisch zu planen, zu strukturieren und umzusetzen.</p>
-                    <br>
-                    <p>Meine bisherigen Module darunter auch Programmieren mit Java, Einführung in die Informatik und die technischen sowie theoretischen Grundlagen von Datenbanksystemen </p>
-                    <p>bilden die Grundlage für ein breites technisches Verständnis und eine solide Herangehensweise an Softwareprojekte.</p>
-                    <br>
-                    <p>Ich bin auf der Suche nach einer Position im Bereich Softwareentwicklung, in der ich mein Wissen praktisch einsetzen, </p>
-                    <p>weiter vertiefen und aktiv zur Entwicklung leistungsfähiger Systeme beitragen kann. Besonders interessieren mich Projekte, bei denen technisches Verständnis, </p>
-                    <p>sauberes Design und nachhaltige Codequalität gefragt sind.</p>
-                    <br>
-                    <p>Wenn Sie einen engagierten Entwickler suchen, der solides technisches Know-how mitbringt und bereit ist, Verantwortung zu übernehmen, </p>
-                    <p>freue ich mich auf Ihre Kontaktaufnahme.</p>
+        </div> 
+        <div id="hero" class="Sectionbase" style="display: flex; padding-top: 10rem; height: 50rem;">  
+            <div id="header_code" class="code-container code-body" style="width: 65rem;">                
+            </div>            
+            <div class="pixel-image"></div>
+        </div> 
 
-                </div>-->
-            </div>             
+        <!--About Section-->
+        <div id="ÜberMich" class="Sectionbase">
+            <!--He´s the one-->
+            <h1>ueberMich();</h1>            
+            <div id="about_code" class="code-container code-body cb-common">
+            </div>                
         </div>        
 
-        <!--Meine (Hard)Skills Section-->
-        <div id="Hardskills" class="Sectionbase radiantbakcgroundtop">
+        <!--HardSkill Section-->
+        <div id="Hardskills" class="Sectionbase">
+            <!--Wich will he choose? The red or the blue one?-->
             <h1>hardskills();</h1>
-            <div class="SkillsGridContainer"> 
-                <div id="skills_s_code" class="code-container code-body code-line"></div> 
-                <!--<div class="Card">
-                        <h1>Java (Fokus)</h1>
-                        <p>Programmiersprachen & Technologien</p>
-                    </div>
-                    <div class="Card">
-                        <h1>C# (Grundkenntnisse)</h1>
-                        <p>Programmiersprachen & Technologien</p>   
-                    </div>
-                    <div class="Card">
-                        <h1>Python (Grundkenntnisse)</h1>
-                        <p>Programmiersprachen & Technologien</p>
-                    </div>
-                    <div class="Card">
-                        <h1>HTML, CSS, JavaScript (Grundlagen in der Webentwicklung)</h1>
-                        <p>Programmiersprachen & Technologien</p>                   
-                    </div>                    
-                    <div class="Card">
-                        <h1>SQL / Datenbankzugriff</h1>
-                        <p>Programmiersprachen & Technologien</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Git / Versionskontrolle</h1>
-                        <p>Programmiersprachen & Technologien</p>
-                    </div>
-                    <div class="Card">
-                        <h1>IDEs: Visual Studio, VS Code</h1>
-                        <p>Programmiersprachen & Technologien</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Objektorientierte Programmierung (OOP)</h1>
-                        <p>Konzepte & Methoden</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Datenstrukturen und Algorithmen</h1>
-                        <p>Konzepte & Methoden</p>
-                    </div>
-                    <div class="Card">
-                        <h1>UML & modellbasierte Softwareentwicklung</h1>
-                        <p>Konzepte & Methoden</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Grundlagen in Software Engineering / Clean Code</h1>
-                        <p>Konzepte & Methoden</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Relationale Datenbanken (z. B. MySQL, SQL)</h1>
-                        <p>Konzepte & Methoden</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Grundlegende Kenntnisse agiler Entwicklungsmethoden (Scrum, Kanban)</h1>
-                        <p>Konzepte & Methoden</p>
-                    </div>
-                -->
-            </div>             
+                <div id="skills_h_code" class="code-container code-body">
+                </div>                 
         </div>
 
-        <!--Meine (Soft)Skills Section-->
+        <!--SoftSkill Section-->
         <div id="Softskills" class="Sectionbase">
             <h1>softskills();</h1>
-            <div class="SkillsGridContainer">
-                <div id="skills_h_code" class="code-container code-body code-line"></div> 
-                <!--  
-                    <div class="Card">
-                        <h1>Analytisches Denken</h1>
-                        <p>Fähigkeit, komplexe Anforderungen zu durchdringen und in strukturierte Lösungen zu überführen.</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Lernbereitschaft</h1>
-                        <p>Neue Technologien und Konzepte schnell erfassen und anwenden.</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Eigenverantwortung</h1>
-                        <p>Selbstständiges Arbeiten, insbesondere bei Projekt- oder Studienarbeiten.</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Teamfähigkeit</h1>
-                        <p>Offenheit für Feedback, Zusammenarbeit in Gruppen (z. B. bei Uni-Projekten oder Coding Challenges).</p>
-                    </div>
-                    <div class="Card">
-                        <h1>Strukturierte Arbeitsweise</h1>
-                        <p>Klare Priorisierung und planvolles Vorgehen – insbesondere in der Softwareentwicklung ein Plus.</p>
-                    </div>
-                -->
-            </div>             
+                <div id="skills_s_code" class="code-container code-body">
+                </div>                 
         </div>
 
-        <!--Refernezobjekte Placeholder Section-->
+        <!--Module Section-->
         <div id="Module" class=" Sectionbase">
             <h1>module();</h1>
-            <div class="SkillsGridContainer">  
-            <div id="modul_code" class="code-container code-body code-line"></div> 
-            <!--<div class="Card">
-                        <h1>Programmieren mit Java</h1>
-                        <p>Programmieren mit Java, Klassen, Methoden, Interfaces und Fehlerbehandlung.</p>
-                        <h1 style="text-align: end;">Note: 1.7</h1>
-                    </div>                
-                    <div class="Card">
-                        <h1>Technische Grundlagen von Datenbanksystemen</h1>
-                        <p>Interna von Datenbanksystemen, Indexstrukturen, Transaktionen, Speicherverwaltung.</p>
-                        <h1 style="text-align: end;">Note: 1.0</h1>
-                    </div>
-                    <div class="Card">
-                        <h1>Software Engineering</h1>
-                        <p>Vorgehensmodelle, Softwarelebenszyklus und Qualitätssicherung im Entwicklungsprozess.</p>
-                        <h1 style="text-align: end;">Note: 2.7</h1>
-                    </div>
-                    <div class="Card">
-                        <h1>Grundlagen der Objektorientierten Programmierung (Python)</h1>
-                        <p>OOP-Konzepte wie Klassen, Objekte, Vererbung und Polymorphie mit Python.</p>
-                        <h1 style="text-align: end;">Note: 1.7</h1>
-                    </div>
-                    <div class="Card">
-                        <h1>Datenstrukturen und Algorithmen</h1>
-                        <p>Effiziente Speicherung und Verarbeitung von Daten, Such- und Sortierverfahren.</p>
-                        <h1 style="text-align: end;">Note: 2.0</h1>
-                    </div>
-                    <div class="Card">
-                        <h1>Unified Modeling Language</h1>
-                        <p>Modellierung von Softwarearchitektur mit Diagrammen wie Klassendiagramm, Use Case.</p>
-                        <h1 style="text-align: end;">Note: 1.0</h1>
-                    </div>
-                    <div class="Card">
-                        <h1>Einführung in die Informatik</h1>
-                        <p>Grundlagen der Informatik, digitale Systeme und erste Programmierkonzepte.</p>
-                        <h1 style="text-align: end;">Note: 3.0</h1>
-                    </div>
-                    <div class="Card">
-                        <h1>Theoretische Grundlagen von Datenbanksystemen</h1>
-                        <p>Relationale Modelle, Normalformen und Abfragesprachen wie SQL.</p>
-                        <h1 style="text-align: end;">Note: 1.0</h1>
-                    </div>
-                    -->
-            </div>   
+            <div id="modul_code" class="code-container code-body"></div> 
         </div>
 
-        <!--Kontakt Placeholder Section-->
-        <div id="Kontakt" class=" Sectionbase" style="height: auto;">
+        <!--Kontakt Section-->
+        <div id="Kontakt" class=" Sectionbase">
             <h1>kontakt();</h1>
-            <div class="KontaktStyle">
-                <div>
-                    Ich würde mich freuen Sie in einem persönlichen Gespräch kennen zu lernen und mit Ihnen <br> 
-                    über Vorstellungen und Wünsche reden. <br>
-                    
-                    <br>                    
-                    Gerne telefonisch oder per Mail.
-                </div>
-                <br><br>
-                <div>
-                    <div>
-                        <p>Waldfrieden 16, 37619 Hehlen</p>
-                    </div>                
-                    <div>
-                        <p><a href="tel:+49 5155 4004420" style="text-decoration: none; color: white;">+49 5155 4004422</a></p>
-                    </div>                
-                    <div>
-                        <p><a href="mailto:mail@andreasfischer-portfolio.de"  style="text-decoration: none; color: grey;">andreasfischer-portfolio.de</a></p>
-                    </div>                  
-                    <div>
-                        
-                    </div>
-                    <div>
-                        <p>Rufen Sie mich an</p>
-                    </div>
-                </div>        
-            </div>
-        </div>
-        <!--Footer Placeholder Section-->
-        <div class="Sectionbase radiantbakcgroundbotfooter footerStyle">
+            <div id="contact_code" class="code-container code-body"></div>
+
+            <div class="Sectionbase footerStyle" style="height: fit-content;">
+
             <div class="footergrid">
                 <div class="footeritem"></div>
                 <div class="footeritem"></div>
@@ -247,19 +69,27 @@
                     <a href="/Impressum.html">Impressum</a><br>
                     <a href="/Datenschutz.html">Datenschutz</a><br>
                     <a href="#" onclick=klaro.show(); return false>Cookie-Einstellungen</a><br>
+                    <code class="easteregg" style="color: #1e1e1e;">
+                        System.out.println("Wake up Neo..");
+                    </code>
                 </div>
+                
 
             </div>
             
-        </div>
-
             
-    </div>  
-
-
-
-
+        </div>
+    
 </body>
-<script src="/Scripts/main.js"></script>
+<!-- 
+// Commit: final touches to portfolio
+// Date: 2025-09-05
+// Author: Andreas Fischer
 
+// TODO: Check if someone is following the rabbit 
+// TODO: Is the cake a lie? 
+// TODO: Make sure to get hired – it is inevitable.
+// HACK: delete TODO's later
+-->
+<script src="/Scripts/main.js"></script>
 </html>
