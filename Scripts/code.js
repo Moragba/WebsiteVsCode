@@ -3,7 +3,7 @@ const header_codeLines = [
   "// Mein Porfolio",
   "public class Portfolio {",
   "\tpublic static void main (String[] args) {",
-  "\t\tDeveloper hero = new Developer(\"Andreas Fischer\", 37, \"Software-Entwickler\");",
+  "\t\tDeveloper hero = new Developer(\"Andreas Fischer\", 39, \"Software-Entwickler\");",
   "\t\thero.aboutMe();",
   "\t\thero.showSkills();",
   "\t\thero.showStudy();",
@@ -120,36 +120,97 @@ const skills_codeLines = [
 "\t}",
 "}\n",
 
-"public class SkillsData {", 
+"public class ModuleSkillsData {", 
 "\tList<Skill> skills = new ArrayList<>();\n",
 
-"\tskills.add(new Skill(\"Programmieren mit Java\",",
-"\t\t\t     \"Programmieren mit Java, Klassen, Methoden, Interfaces und Fehlerbehandlung.\",",
-"\t\t\t     1.7));\n",
-"\tskills.add(new Skill(\"Technische Grundlagen von Datenbanksystemen\",",
-"\t\t\t     \"Interna von Datenbanksystemen, Indexstrukturen, Transaktionen, Speicherverwaltung.\",",
-"\t\t\t     1.0));\n",
-"\tskills.add(new Skill(\"Software Engineering\",",
-"\t\t\t     \"Vorgehensmodelle, Softwarelebenszyklus und Qualitätssicherung im Entwicklungsprozess.\",",
-"\t\t\t     2.7));\n",
-"\tskills.add(new Skill(\"Grundlagen der Objektorientierten Programmierung (Python)\",",
-"\t\t\t     \"OOP-Konzepte wie Klassen, Objekte, Vererbung und Polymorphie mit Python.\",",
-"\t\t\t     1.7));\n",
-"\tskills.add(new Skill(\"Datenstrukturen und Algorithmen\",",
-"\t\t\t     \"Effiziente Speicherung und Verarbeitung von Daten, Such- und Sortierverfahren.\",",
+"\tskills.add(new Skill(\"Grundlagen der objektorientierten Programmierung\",",
+"\t\t\t     \"Java & Python OOP, Klassen, Vererbung, Polymorphie.\",",
 "\t\t\t     2.0));\n",
-"\tskills.add(new Skill(\"Unified Modeling Language\",",
-"\t\t\t     \"Modellierung von Softwarearchitektur mit Diagrammen wie Klassendiagramm, Use Case.\",",
+
+"\tskills.add(new Skill(\"Grundlagen der Informatik\",",
+"\t\t\t     \"Algorithmen, Datenstrukturen, Zahlensysteme, O-Notation.\",",
+"\t\t\t     2.0));\n",
+
+"\tskills.add(new Skill(\"Software Engineering\",",
+"\t\t\t     \"UML, Architekturen, Qualitätssicherung, Vorgehensmodelle.\",",
+"\t\t\t     2.7));\n",
+
+"\tskills.add(new Skill(\"Datenbanksysteme\",",
+"\t\t\t     \"Relationale Modelle, SQL, Transaktionen, DB-Architektur.\",",
 "\t\t\t     1.0));\n",
-"\tskills.add(new Skill(\"Einführung in die Informatik\",",
-"\t\t\t     \"Grundlagen der Informatik, digitale Systeme und erste Programmierkonzepte.\",",
-"\t\t\t     3.0));\n",
-"\tskills.add(new Skill(\"Theoretische Grundlagen von Datenbanksystemen\",",
-"\t\t\t     \"Relationale Modelle, Normalformen und Abfragesprachen wie SQL.\",",
+
+"\tskills.add(new Skill(\"Datenbanken (Aufbauprüfung)\",",
+"\t\t\t     \"Datenbanken in Webanwendungen & verteilte Systeme.\",",
 "\t\t\t     1.0));\n",
+
+"\tskills.add(new Skill(\"Multimediale Anwendungen\",",
+"\t\t\t     \"Webkommunikation, serverseitige Sprachen, Frameworks.\",",
+"\t\t\t     1.0));\n",
+
+"\tskills.add(new Skill(\"Weiterführende Programmierung\",",
+"\t\t\t     \"C, C++, Pointer, Rekursion, objektorientierte Konzepte.\",",
+"\t\t\t     1.0));\n",
+
 "\t}",
-"}"
-];
+"}",
+
+"public class ExamSkillsData {", 
+"\tList<Skill> skills = new ArrayList<>();\n",
+
+"\tskills.add(new Skill(\"Einführung in die Informatik (GDI01)\",",
+"\t\t\t     \"Grundlagen der Informatik und digitale Systeme.\",",
+"\t\t\t     3.0));\n",
+
+"\tskills.add(new Skill(\"Software Engineering (SEI21)\",",
+"\t\t\t     \"Softwareprozesse und Entwicklungsmodelle.\",",
+"\t\t\t     2.7));\n",
+
+"\tskills.add(new Skill(\"Datenstrukturen und Algorithmen (TGI01)\",",
+"\t\t\t     \"Sortierverfahren, Suchalgorithmen, Komplexität.\",",
+"\t\t\t     2.0));\n",
+
+"\tskills.add(new Skill(\"UML (SEI12)\",",
+"\t\t\t     \"Modellierung mit Klassendiagramm, Use Case, Sequence.\",",
+"\t\t\t     1.0));\n",
+
+"\tskills.add(new Skill(\"Algorithmen und Komplexität (TGI02)\",",
+"\t\t\t     \"Komplexitätsanalyse und fortgeschrittene Algorithmen.\",",
+"\t\t\t     1.0));\n",
+
+"\tskills.add(new Skill(\"Theoretische Grundlagen DB (DBI11)\",",
+"\t\t\t     \"Relationale Algebra und Datenbanktheorie.\",",
+"\t\t\t     1.0));\n",
+
+"\tskills.add(new Skill(\"Java I (JAPR01)\",",
+"\t\t\t     \"OOP mit Java, Klassen, Methoden, Vererbung.\",",
+"\t\t\t     1.7));\n",
+
+"\tskills.add(new Skill(\"Java II (JAPR02)\",",
+"\t\t\t     \"Fortgeschrittene Java-Programmierung.\",",
+"\t\t\t     1.3));\n",
+
+"\tskills.add(new Skill(\"Qualitätssicherung (SEI23)\",",
+"\t\t\t     \"Testing, Reviews, Qualität im Softwareprozess.\",",
+"\t\t\t     1.0));\n",
+
+"\tskills.add(new Skill(\"C Programmierung Teil 1 (GPI21)\",",
+"\t\t\t     \"Pointer, Speicherverwaltung, Low-Level-Konzepte.\",",
+"\t\t\t     1.3));\n",
+
+"\tskills.add(new Skill(\"C Programmierung Teil 2 (GPI22)\",",
+"\t\t\t     \"Rekursion, komplexe Datenstrukturen in C.\",",
+"\t\t\t     1.7));\n",
+
+"\tskills.add(new Skill(\"C++ Teil 1 (GPI15)\",",
+"\t\t\t     \"Objektorientierung in C++.\",",
+"\t\t\t     1.3));\n",
+
+"\tskills.add(new Skill(\"C++ Teil 2 (GPI16)\",",
+"\t\t\t     \"Fortgeschrittene OOP-Konzepte in C++.\",",
+"\t\t\t     1.0));\n",
+
+"\t}",
+"}"];
 
 const contactLines = [
     "Adresse: \"Waldfrieden\", 16, \"37619 Hehlen\"",
@@ -227,8 +288,8 @@ function type(c, id){
     typeLine();
 }
 
-//document.addEventListener('consentClosed', () => {
-window.addEventListener('load', () => {
+document.addEventListener('consentClosed', () => {
+//window.addEventListener('load', () => {
   const imgDiv = document.querySelector('.pixel-image');
   setTimeout(() => {
     imgDiv.classList.add('sharp'); 
