@@ -134,8 +134,8 @@ body{
   top: 5rem;
   left: 5rem;
   width: 500px;
-  height: 600px;
-  background: url('/Images/HeroImage1.jpg') no-repeat center/cover;
+  height: 500px;
+  background: url('/Images/HeroImage5.JPG') no-repeat center/cover;
   filter: blur(20px);
   transition: filter 2s ease;
 }
@@ -143,6 +143,98 @@ body{
 .pixel-image.sharp {
   filter: blur(0);
 }
+
+
+    .certificate-container {
+    display: flex;
+    flex-direction: row;        
+    justify-content: center;     
+    align-items: flex-start;
+    gap: 50px;                   
+    flex-wrap: wrap;             
+    margin: 20px 0;
+    width: 100%;
+    }
+
+    .certificate-card {
+    position: relative;
+    display: block;
+    width: 260px;                
+    max-width: 100%;             
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    }
+
+    .certificate-card:hover {
+    transform: scale(1.10);      
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    }
+
+    .cert-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    }
+
+    .cert-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    }
+
+    .certificate-card:hover .cert-overlay {
+    opacity: 1;
+    }
+
+    .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* Dunkler Hintergrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none; /* Klicks durchlassen, wenn unsichtbar */
+    transition: opacity 0.3s ease;
+    z-index: 9999; /* Immer ganz oben liegen */
+    cursor: zoom-out;
+    }
+
+    /* Aktiv-Zustand beim Öffnen */
+    .lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+    }
+
+    /* Das vergrößerte Bild */
+    .lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    }
+
+    .lightbox.active img {
+    transform: scale(1); /* Sanftes Heranzoomen beim Öffnen */
+    }
 
 @media (max-width: 1000px) {   
     .Sectionbase{        
@@ -158,22 +250,6 @@ body{
         top: 15rem;
         left: -25rem;
     }
-/*
-    .code-container {  
-        font-size: 0.4rem;
-    }
-    .Sectionbase h1{
-        font-size: 1rem;
-    }
-    .Sectionbase h2{
-        font-size: 0.8rem;
-    }
-    .footeritem{
-        font-size: 0.4rem;
-    }
 
-    .NavSection a{
-        font-size: 0.5rem;
-    }
-        */
+    
 }

@@ -1,25 +1,23 @@
 const header_codeLines = [
   "",
-  "// Mein Porfolio",
+  "// Mein Portfolio - Andreas Fischer",
   "public class Portfolio {",
-  "\tpublic static void main (String[] args) {",
-  "\t\tDeveloper hero = new Developer(\"Andreas Fischer\", 39, \"Software-Entwickler\");",
+  "\tpublic static void main(String[] args) {",
+  "\t\tDeveloper hero = new Developer(\"Andreas Fischer\", \"Zertifizierter Softwareentwickler\");",
+  "\t\thero.showDegree(\"Professional Software Engineering (WBH)\");",
   "\t\thero.aboutMe();",
   "\t\thero.showSkills();",
-  "\t\thero.showStudy();",
+  "\t\thero.showCurrentProjects();",
   "\t\thero.add(new Contact());",
-
   "\t}",
   "}",
   "",
   "class Developer {",
   "\tString name;",
-  "\tint age;",
   "\tString role;",
   "",
-  "\tDeveloper(String name, int age, String role) {",
+  "\tDeveloper(String name, String role) {",
   "\t\tthis.name = name;",
-  "\t\tthis.age = age;",
   "\t\tthis.role = role;",
   "\t}",
   "}"
@@ -28,193 +26,135 @@ const header_codeLines = [
 const about_codeLines = [
   "",
   "void portfolioIntro() {",
-  "\tSystem.out.printlf(\"Ich bin Andreas Fischer,\");",
+  "\tSystem.out.println(\"Hallo! Ich bin Andreas Fischer.\");",
   "",
-  "\tSystem.out.printlo(\"Student der Softwarearchitektur mit Schwerpunkt auf Softwareentwicklung und modernen Systemarchitekturen.\");",
+  "\tSystem.out.println(\"Ich habe meinen Zertifikatsstudiengang Professional Software Engineering\");",
+  "\tSystem.out.println(\"an der Wilhelm Büchner Hochschule auf Bachelorniveau mit 'sehr gut' abgeschlossen.\");",
   "",
-  "\tSystem.out.printll(\"Im Rahmen meines Studiums habe ich bereits fundierte Kenntnisse in den Bereichen objektorientierte Programmierung,\");",
-  "\tSystem.out.printll(\"Datenstrukturen und Algorithmen, Datenbanksysteme, Unified Modeling Language (UML),\");",
-  "\tSystem.out.printlo(\"sowie Software Engineering erworben.\");",
-  "\tSystem.out.printlw(\"Besonderen Fokus lege ich aktuell auf die Programmiersprache Java, mit der ich intensiv arbeite.\");",
-  "\tSystem.out.printlt(\"Ergänzend bringe ich Erfahrung mit C# und Python mit.\");",
+  "\tSystem.out.println(\"Mein Studium (46 VP / ECTS) umfasste fundierte Ausbildung in Softwarearchitekturen,\");",
+  "\tSystem.out.println(\"objektorientierter Programmierung, modernen Datenbanken und qualitätsgesicherter Entwicklung.\");",
   "",
-  "\tSystem.out.printlh(\"Durch kleinere Projekte und praktische Übungen konnte ich erste Erfahrungen in der Webentwicklung\");",
-  "\tSystem.out.printle(\"(HTML, CSS, JavaScript)\");",
-  "\tSystem.out.printlw(\"sowie im Datenbankdesign und -zugriff sammeln.\");",
-  "\tSystem.out.printlh(\"Dabei habe ich gelernt, Softwarelösungen systematisch zu planen, zu strukturieren und umzusetzen.\");",
+  "\tSystem.out.println(\"Aktuell vertiefe ich meine Praxiskenntnisse in einem Fullstack-Eigenprojekt:\");",
+  "\tSystem.out.println(\"  - Backend: REST-API mit Java, Spring Boot & Hibernate\");",
+  "\tSystem.out.println(\"  - Frontend: Dynamische UI mit React\");",
+  "\tSystem.out.println(\"  - Database & DevOps: MySQL & Containerisierung mit Docker\");",
   "",
-  "\tSystem.out.printli(\"Meine bisherigen Module darunter auch Programmieren mit Java, Einführung in die Informatik und die\");",
-  "\tSystem.out.printlt(\"technischen sowie theoretischen Grundlagen von Datenbanksystemen\");",
-  "\tSystem.out.printle(\"bilden die Grundlage für ein breites technisches Verständnis und eine solide Herangehensweise an Softwareprojekte.\");",
+  "\tSystem.out.println(\"Ich suche eine Position als Softwareentwickler, um mein theoretisches Know-how\");",
+  "\tSystem.out.println(\"und meine praktische Umsetzungsstärke gewinnbringend in ein Entwicklerteam einzubringen.\");",
+  "}"
+];
+
+const cert_codeLines = [
   "",
-  "\tSystem.out.printlr(\"Ich bin auf der Suche nach einer Position im Bereich Softwareentwicklung, in der ich mein Wissen praktisch einsetzen,\");",
-  "\tSystem.out.printla(\"weiter vertiefen und aktiv zur Entwicklung leistungsfähiger Systeme beitragen kann.\" + ", 
-  "\t\t\t   \"Besonders interessieren mich Projekte,\");",
-  "\tSystem.out.printlb(\"bei denen technisches Verständnis,\");",
-  "\tSystem.out.printlb(\"sauberes Design und nachhaltige Codequalität gefragt sind.\");",
-  "",
-  "\tSystem.out.printli(\"Wenn Sie einen engagierten Entwickler suchen, der solides technisches Know-how mitbringt und bereit ist,\");",
-  "\tSystem.out.printlt(\"Verantwortung zu übernehmen,\");",
-  "\tSystem.out.println(\"freue ich mich auf Ihre Kontaktaufnahme.\");",
-  "}🐇"
+  "void showCertificates() {",
+  "\tSystem.out.println(\"=== Verifizierte WBH-Zertifikate ===\");",
+  "\tSystem.out.println(\"  - Vorderseite: Professional Software Engineering (sehr gut)\");",
+  "\tSystem.out.println(\"  - Rückseite: Modulnoten & 46 VP / ECTS\");",
+  "\tSystem.out.println(\"Fahre über die Vorschaubilder, um sie zu vergrößern, oder klicke darauf zum Öffnen der PDF.\");",
+  "}"
 ];
 
 const skills_h_codeLines = [
-"",
-"void hardskills() {",
-"\tSystem.out.println(\"=== Hardskills ===\");\n",
+  "",
+  "void hardskills() {",
+  "\tSystem.out.println(\"=== Hardskills & Tech Stack ===\");\n",
 
-"\tSystem.out.println(\"Programmiersprachen & Technologien:\");",
-"\t\tSystem.out.println(\"  - Java (Fokus)\");",
-"\t\tSystem.out.println(\"  - C# (Grundkenntnisse)\");",
-"\t\tSystem.out.println(\"  - Python (Grundkenntnisse)\");",
-"\t\tSystem.out.println(\"  - HTML, CSS, JavaScript (Grundlagen in der Webentwicklung)\");",
-"\t\tSystem.out.println(\"  - SQL / Datenbankzugriff\");\n",
+  "\tSystem.out.println(\"Programmiersprachen:\");",
+  "\t\tSystem.out.println(\"  - Java (Schwerpunkt / Fokus)\");",
+  "\t\tSystem.out.println(\"  - C#, C / C++\");",
+  "\t\tSystem.out.println(\"  - Python, PHP\");",
+  "\t\tSystem.out.println(\"  - JavaScript, HTML5, CSS3\");\n",
 
-"\tSystem.out.println(\"Tools & Entwicklungsumgebung:\");",
-"\t\tSystem.out.println(\"  - Git / Versionskontrolle\");",
-"\t\tSystem.out.println(\"  - IDEs: Visual Studio, VS Code\");\n",
+  "\tSystem.out.println(\"Frameworks & Webentwicklung:\");",
+  "\t\tSystem.out.println(\"  - Spring Boot, Hibernate\");",
+  "\t\tSystem.out.println(\"  - React\");",
+  "\t\tSystem.out.println(\"  - Serverseitige & Clientseitige Web-Applikationen\");\n",
 
-"\tSystem.out.println(\"Konzepte & Methoden:\");",
-"\t\tSystem.out.println(\"  - Objektorientierte Programmierung (OOP)\");",
-"\t\tSystem.out.println(\"  - Datenstrukturen und Algorithmen\");",
-"\t\tSystem.out.println(\"  - UML & modellbasierte Softwareentwicklung\");",
-"\t\tSystem.out.println(\"  - Grundlagen in Software Engineering / Clean Code\");",
-"\t\tSystem.out.println(\"  - Relationale Datenbanken (z.B. MySQL, SQL)\");",
-"\t\tSystem.out.println(\"  - Grundlegende Kenntnisse agiler Entwicklungsmethoden (Scrum, Kanban)\");",
-"}"
+  "\tSystem.out.println(\"Datenbanken & DevOps:\");",
+  "\t\tSystem.out.println(\"  - Relationale Datenbanken / MySQL / SQL (Note: 1,1)\");",
+  "\t\tSystem.out.println(\"  - Docker (Containerisierung)\");",
+  "\t\tSystem.out.println(\"  - Git / Versionskontrolle\");",
+  "\t\tSystem.out.println(\"  - IDEs: VS Code, Visual Studio\");\n",
+
+  "\tSystem.out.println(\"Konzepte & Architekturen:\");",
+  "\t\tSystem.out.println(\"  - Objektorientierte Programmierung (OOP)\");",
+  "\t\tSystem.out.println(\"  - Softwarearchitektur & Clean Code (Note: 1,3)\");",
+  "\t\tSystem.out.println(\"  - UML & modellbasierte Entwicklung (Note: 1,0)\");",
+  "\t\tSystem.out.println(\"  - Datenstrukturen und Algorithmen\");",
+  "\t\tSystem.out.println(\"  - Agiles Arbeiten (Scrum, Kanban)\");",
+  "}"
 ];
 
 const skills_s_codeLines = [
-"",
-"void softskills() {",
-"\tSystem.out.println(\"=== Softskills ===\");\n",
+  "",
+  "void softskills() {",
+  "\tSystem.out.println(\"=== Softskills & Arbeitsweise ===\");\n",
 
-"\tSystem.out.println(\"Analytisches Denken:\");",
-"\t\tSystem.out.println(\"  - Fähigkeit, komplexe Anforderungen zu durchdringen und in strukturierte Lösungen zu überführen.\");\n",
+  "\tSystem.out.println(\"Analytisches Denken:\");",
+  "\t\tSystem.out.println(\"  - Komplexe Anforderungen durchdringen und in strukturierte, saubere Architekturen überführen.\");\n",
 
-"\tSystem.out.println(\"Lernbereitschaft:\");",
-"\t\tSystem.out.println(\"  - Neue Technologien und Konzepte schnell erfassen und anwenden.\");\n",
+  "\tSystem.out.println(\"Hohe Lernbereitschaft & Eigeninitiative:\");",
+  "\t\tSystem.out.println(\"  - Schnelles Einarbeiten in neue Technologien & Frameworks (z. B. Spring Boot, React, Docker).\");\n",
 
-"\tSystem.out.println(\"Eigenverantwortung:\");",
-"\t\tSystem.out.println(\"  - Selbstständiges Arbeiten, insbesondere bei Projekt- oder Studienarbeiten.\");\n",
+  "\tSystem.out.println(\"Eigenverantwortung & Zuverlässigkeit:\");",
+  "\t\tSystem.out.println(\"  - Selbstständige Projektplanung und strukturierte Umsetzung.\");\n",
 
-"\tSystem.out.println(\"Teamfähigkeit:\");",
-"\t\tSystem.out.println(\"  - Offenheit für Feedback, Zusammenarbeit in Gruppen (z.B. bei Uni-Projekten oder Coding Challenges).\");\n",
-
-"\tSystem.out.println(\"Strukturierte Arbeitsweise:\");",
-"\t\tSystem.out.println(\"  - Klare Priorisierung und planvolles Vorgehen - insbesondere in der Softwareentwicklung ein Plus.\");",
-"}"
+  "\tSystem.out.println(\"Teamfähigkeit & Kommunikationsstärke:\");",
+  "\t\tSystem.out.println(\"  - Offenheit für Feedback, agile Zusammenarbeit und Unterstützung im IT-Support.\");",
+  "}"
 ];
 
 const skills_codeLines = [
-"public class Skill {",
-"\tprivate String title;",
-"\tprivate String description;",
-"\tprivate double note;\n",
+  "public class Skill {",
+  "\tprivate String title;",
+  "\tprivate String description;",
+  "\tprivate double note;\n",
 
-"\tpublic Skill(String title, String description, double note) {",
-"\t\tthis.title = title;",
-"\t\tthis.description = description;",
-"\t\tthis.note = note;",
-"\t}",
-"}\n",
+  "\tpublic Skill(String title, String description, double note) {",
+  "\t\tthis.title = title;",
+  "\t\tthis.description = description;",
+  "\t\tthis.note = note;",
+  "\t}",
+  "}\n",
 
-"public class ModuleSkillsData {", 
-"\tList<Skill> skills = new ArrayList<>();\n",
+  "public class ModuleSkillsData {", 
+  "\tList<Skill> skills = new ArrayList<>();\n",
 
-"\tskills.add(new Skill(\"Grundlagen der objektorientierten Programmierung\",",
-"\t\t\t     \"Java & Python OOP, Klassen, Vererbung, Polymorphie.\",",
-"\t\t\t     2.0));\n",
+  "\tskills.add(new Skill(\"Projektarbeit\",",
+  "\t\t\t     \"Praxisnahe Umsetzung, Dokumentation & Präsentation eines Softwareprojekts.\",",
+  "\t\t\t     1.0));\n",
 
-"\tskills.add(new Skill(\"Grundlagen der Informatik\",",
-"\t\t\t     \"Algorithmen, Datenstrukturen, Zahlensysteme, O-Notation.\",",
-"\t\t\t     2.0));\n",
+  "\tskills.add(new Skill(\"Multimediale Anwendungen\",",
+  "\t\t\t     \"Webkommunikation, client-/serverseitige Websprachen & Frameworks.\",",
+  "\t\t\t     1.0));\n",
 
-"\tskills.add(new Skill(\"Software Engineering\",",
-"\t\t\t     \"UML, Architekturen, Qualitätssicherung, Vorgehensmodelle.\",",
-"\t\t\t     2.7));\n",
+  "\tskills.add(new Skill(\"Datenbanken\",",
+  "\t\t\t     \"Theoretische & technische Grundlagen, SQL, Verteilte DBs & Webanwendungen.\",",
+  "\t\t\t     1.1));\n",
 
-"\tskills.add(new Skill(\"Datenbanksysteme\",",
-"\t\t\t     \"Relationale Modelle, SQL, Transaktionen, DB-Architektur.\",",
-"\t\t\t     1.0));\n",
+  "\tskills.add(new Skill(\"Software Engineering\",",
+  "\t\t\t     \"Softwarearchitekturen, Qualitätssicherung, UML & agiles Arbeiten.\",",
+  "\t\t\t     1.3));\n",
 
-"\tskills.add(new Skill(\"Datenbanken (Aufbauprüfung)\",",
-"\t\t\t     \"Datenbanken in Webanwendungen & verteilte Systeme.\",",
-"\t\t\t     1.0));\n",
+  "\tskills.add(new Skill(\"Grundlagen der OOP\",",
+  "\t\t\t     \"Java I & II, Python, Klassen, Vererbung, Polymorphie.\",",
+  "\t\t\t     2.0));\n",
 
-"\tskills.add(new Skill(\"Multimediale Anwendungen\",",
-"\t\t\t     \"Webkommunikation, serverseitige Sprachen, Frameworks.\",",
-"\t\t\t     1.0));\n",
+  "\tskills.add(new Skill(\"Grundlagen der Informatik\",",
+  "\t\t\t     \"Datenstrukturen, Algorithmen & Komplexitätsanalyse.\",",
+  "\t\t\t     2.0));\n",
 
-"\tskills.add(new Skill(\"Weiterführende Programmierung\",",
-"\t\t\t     \"C, C++, Pointer, Rekursion, objektorientierte Konzepte.\",",
-"\t\t\t     1.0));\n",
+  "\tskills.add(new Skill(\"Weiterführende Programmierung\",",
+  "\t\t\t     \"C & C++, Pointer, Speicherverwaltung, Rekursion & fortgeschrittene OOP.\",",
+  "\t\t\t     2.3));\n",
 
-"\t}",
-"}",
-
-"public class ExamSkillsData {", 
-"\tList<Skill> skills = new ArrayList<>();\n",
-
-"\tskills.add(new Skill(\"Einführung in die Informatik (GDI01)\",",
-"\t\t\t     \"Grundlagen der Informatik und digitale Systeme.\",",
-"\t\t\t     3.0));\n",
-
-"\tskills.add(new Skill(\"Software Engineering (SEI21)\",",
-"\t\t\t     \"Softwareprozesse und Entwicklungsmodelle.\",",
-"\t\t\t     2.7));\n",
-
-"\tskills.add(new Skill(\"Datenstrukturen und Algorithmen (TGI01)\",",
-"\t\t\t     \"Sortierverfahren, Suchalgorithmen, Komplexität.\",",
-"\t\t\t     2.0));\n",
-
-"\tskills.add(new Skill(\"UML (SEI12)\",",
-"\t\t\t     \"Modellierung mit Klassendiagramm, Use Case, Sequence.\",",
-"\t\t\t     1.0));\n",
-
-"\tskills.add(new Skill(\"Algorithmen und Komplexität (TGI02)\",",
-"\t\t\t     \"Komplexitätsanalyse und fortgeschrittene Algorithmen.\",",
-"\t\t\t     1.0));\n",
-
-"\tskills.add(new Skill(\"Theoretische Grundlagen DB (DBI11)\",",
-"\t\t\t     \"Relationale Algebra und Datenbanktheorie.\",",
-"\t\t\t     1.0));\n",
-
-"\tskills.add(new Skill(\"Java I (JAPR01)\",",
-"\t\t\t     \"OOP mit Java, Klassen, Methoden, Vererbung.\",",
-"\t\t\t     1.7));\n",
-
-"\tskills.add(new Skill(\"Java II (JAPR02)\",",
-"\t\t\t     \"Fortgeschrittene Java-Programmierung.\",",
-"\t\t\t     1.3));\n",
-
-"\tskills.add(new Skill(\"Qualitätssicherung (SEI23)\",",
-"\t\t\t     \"Testing, Reviews, Qualität im Softwareprozess.\",",
-"\t\t\t     1.0));\n",
-
-"\tskills.add(new Skill(\"C Programmierung Teil 1 (GPI21)\",",
-"\t\t\t     \"Pointer, Speicherverwaltung, Low-Level-Konzepte.\",",
-"\t\t\t     1.3));\n",
-
-"\tskills.add(new Skill(\"C Programmierung Teil 2 (GPI22)\",",
-"\t\t\t     \"Rekursion, komplexe Datenstrukturen in C.\",",
-"\t\t\t     1.7));\n",
-
-"\tskills.add(new Skill(\"C++ Teil 1 (GPI15)\",",
-"\t\t\t     \"Objektorientierung in C++.\",",
-"\t\t\t     1.3));\n",
-
-"\tskills.add(new Skill(\"C++ Teil 2 (GPI16)\",",
-"\t\t\t     \"Fortgeschrittene OOP-Konzepte in C++.\",",
-"\t\t\t     1.0));\n",
-
-"\t}",
-"}"];
+  "\t}",
+  "}"
+];
 
 const contactLines = [
     "Adresse: \"Waldfrieden\", 16, \"37619 Hehlen\"",
-    "Telefon: +49 5155 4004422",
+    "Telefon: +49 157 511 68 233",
     "E-Mail: \"mail@andreasfischer-portfolio.de\"",    
 ];
 
@@ -295,6 +235,7 @@ document.addEventListener('consentClosed', () => {
     imgDiv.classList.add('sharp'); 
     divCodeText(header_codeLines, "header_code");
     divCodeText(about_codeLines, "about_code");
+    divCodeText(cert_codeLines, "cert_code");
     divCodeText(skills_h_codeLines, "skills_h_code");
     divCodeText(skills_s_codeLines, "skills_s_code");
     divCodeText(contactLines, "contact_code");
@@ -314,6 +255,19 @@ function divCodeText(cl, id){
     threshold: 0.3
   });
 observer.observe(document.getElementById(id));
+}
+
+function openLightbox(imageSrc) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  
+  lightboxImg.src = imageSrc;
+  lightbox.classList.add('active');
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.remove('active');
 }
 
 
