@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/Styles/main.css">
     <link rel="stylesheet" href="/Styles/klaro.css" />
+    <link rel="stylesheet" href="/Styles/project.css" />
     <script defer type="application/javascript" src="/Scripts/klaro.js"></script>    
     <script defer data-config="klaroConfig" src="/Scripts/klarosc.js"></script>
     <script defer type="application/javascript" src="/Scripts/code.js"></script> 
@@ -55,7 +56,92 @@
             <div id="lightbox" class="lightbox" onclick="closeLightbox()">
             <img id="lightbox-img" src="" alt="Vergrößertes Zertifikat">
             </div>
-        </section>       
+        </section>
+        
+        <section id="certificates" class="Sectionbase certificates-section">
+            <div id="cert_code" class="code-container code-body">
+                </div>
+            <h2>Weitere Zertifikate</h2>
+            
+            <div class="certificate-container">
+                <div class="certificate-card" onclick="openLightbox('/Images/CS.jpg')">
+                    <img src="/Images/CS.jpg" alt="Certification Image" class="cert-image">
+                    <div class="cert-overlay">
+                    <span>🔍 Klicken zum Vergrößern</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card" onclick="openLightbox('/Images/HTMLCSS.jpg')">
+                    <img src="/Images/HTMLCSS.jpg" alt="Certification Image" class="cert-image">
+                    <div class="cert-overlay">
+                    <span>🔍 Notenübersicht vergrößern</span>
+                    </div>
+                </div>
+
+            
+                <div class="certificate-card" onclick="openLightbox('/Images/JavaScript.jpg')">
+                    <img src="/Images/JavaScript.jpg" alt="Certification Image" class="cert-image">
+                    <div class="cert-overlay">
+                    <span>🔍 Notenübersicht vergrößern</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="Vergrößertes Zertifikat">
+            </div>
+        </section>
+
+        <section id="projects" class="Sectionbase projects-section">
+            <div id="projects_code" class="code-container code-body"></div>
+            
+            <h2>Praxisprojekte & Code-Repositories</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                <div class="project-header">
+                    <h3>Fullstack Web-Applikation</h3>
+                </div>
+                <p class="project-desc">
+                    Aktuelles Praxisprojekt: REST-Backend mit Spring Boot & Hibernate, dynamisches React-Frontend, MySQL-Anbindung und Containerisierung über Docker.
+                </p>
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>React</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                </div>
+                <a href="https://github.com/Moragba/auspo" target="_blank" rel="noopener noreferrer" class="github-btn">
+                    <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    GitHub Repository ansehen
+                </a>
+                </div>
+
+                <div class="project-card">
+                <div class="project-header">
+                    <h3>Developer Portfolio-Website</h3>
+                </div>
+                <p class="project-desc">
+                    Diese Website selbst: Eigenständig entwickeltes Portfolio im IDE- / Java-Code-Style mit dynamischem Typing-Effekt, Canvas-Interaktionen und Custom Lightbox.
+                </p>
+                <div class="project-tags">
+                    <span>JavaScript (ES6+)</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Responsive Design</span>
+                </div>
+                <a href="https://github.com/Moragba/WebsiteVsCode" target="_blank" rel="noopener noreferrer" class="github-btn">
+                    <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    GitHub Repository ansehen
+                </a>
+                </div>
+            </div>
+        </section>
 
         <!--HardSkill Section-->
         <div id="Hardskills" class="Sectionbase">

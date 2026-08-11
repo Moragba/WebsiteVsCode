@@ -54,6 +54,16 @@ const cert_codeLines = [
   "}"
 ];
 
+const projects_codeLines = [
+  "",
+  "void showRepositories() {",
+  "\tSystem.out.println(\"=== Open Source & GitHub Repositories ===\");",
+  "\tSystem.out.println(\"  - Fullstack Project: Spring Boot, React, MySQL, Docker\");",
+  "\tSystem.out.println(\"  - Portfolio Source Code: Custom Vanilla JS Engine & CSS Layouts\");",
+  "\tSystem.out.println(\"Werfen Sie gerne einen Blick in meinen Quellcode und meine Commit-Historie.\");",
+  "}"
+];
+
 const skills_h_codeLines = [
   "",
   "void hardskills() {",
@@ -236,6 +246,7 @@ document.addEventListener('consentClosed', () => {
     divCodeText(header_codeLines, "header_code");
     divCodeText(about_codeLines, "about_code");
     divCodeText(cert_codeLines, "cert_code");
+    divCodeText(projects_codeLines, "projects_code");
     divCodeText(skills_h_codeLines, "skills_h_code");
     divCodeText(skills_s_codeLines, "skills_s_code");
     divCodeText(contactLines, "contact_code");
