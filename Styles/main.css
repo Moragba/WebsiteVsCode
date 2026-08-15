@@ -60,6 +60,14 @@ body{
     
 }
 
+a{
+    color: #cf8569;
+    text-decoration: none;
+    visited{
+        color: #cf8569;
+    }
+}
+
 
 .footergrid{
     margin-top: 10%;

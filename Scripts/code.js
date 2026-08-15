@@ -165,7 +165,8 @@ const skills_codeLines = [
 const contactLines = [
     "Adresse: \"Waldfrieden\", 16, \"37619 Hehlen\"",
     "Telefon: +49 157 511 68 233",
-    "E-Mail: \"mail@andreasfischer-portfolio.de\"",    
+    "E-Mail: <a href='mailto:mail@andreasfischer-portfolio.de'>\"mail@andreasfischer-portfolio.de\"</a>",
+    "LinkedIn: <a href='https://www.linkedin.com/in/andreas-fischer-b6a242378' target='_blank'>\"linkedin.com/in/andreas-fischer-portfolio\"</a>"
 ];
 
 const consentClosedEvent = new Event("consentClosed");
@@ -189,6 +190,14 @@ function type(c, id){
     if(line < c.length){
         const container = document.getElementById(id);
         let currentLine = c[line];
+
+        if (currentLine.includes("<a") || currentLine.includes("</a>")) {
+                container.innerHTML += currentLine + "\n"; 
+                line++;
+                i = 0;
+                setTimeout(typeLine, 25); 
+                return;
+        } 
         
         function typeChar() {
         if(i < currentLine.length){
