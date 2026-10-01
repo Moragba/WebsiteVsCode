@@ -247,21 +247,82 @@ function type(c, id){
     typeLine();
 }
 
+function typeInstant(c, id){
+    let i = 0;
+    let line = 0;
+
+    function typeLine() {
+    if(line < c.length){
+        const container = document.getElementById(id);
+        let currentLine = c[line];
+
+        if (currentLine.includes("<a") || currentLine.includes("</a>")) {
+                container.innerHTML += currentLine + "\n"; 
+                line++;
+                i = 0;
+                typeLine(); 
+                return;
+        } 
+        
+        function typeChar() {
+        if(i < currentLine.length){
+            let char = currentLine[i];
+            
+            if(char === "/" && currentLine[i+1] === "/"){
+            container.innerHTML += '<span class="comment">' + currentLine.slice(i) + '</span>';
+            i = currentLine.length;
+            } else if(char === '"'){
+            let end = currentLine.indexOf('"', i+1);
+            container.innerHTML += '<span class="string">' + currentLine.slice(i, end+1) + '</span>';
+            i = end + 1;
+            } else if(/\b(public|static|class|void)\b/.test(currentLine.slice(i).split(/\s/)[0])){
+            let word = currentLine.slice(i).split(/\s/)[0];
+            container.innerHTML += '<span class="keyword">' + word + '</span>';
+            i += word.length;
+            }else if(/\b(String|int)\b/.test(currentLine.slice(i).split(/\s/)[0])){
+            let word = currentLine.slice(i).split(/\s/)[0];
+            container.innerHTML += '<span class="object">' + word + '</span>';
+            i += word.length;
+            }
+            else if(/^\d+(\.\d+)?/.test(currentLine.slice(i))){
+            let match = currentLine.slice(i).match(/^\d+(\.\d+)?/)[0];
+            container.innerHTML += '<span class="numbers">' + match + '</span>';
+            i += match.length;
+            } else{
+            container.innerHTML += char;
+            i++;
+            }
+            typeChar();//std 30
+        } else {
+            container.innerHTML += "\n";
+            line++;
+            i = 0;
+            typeLine(); //std 50
+        }
+        }
+        typeChar();
+    }
+    }
+    typeLine();
+}
+
+divCodeTextInstant(about_codeLines, "about_code");
+divCodeTextInstant(cert_codeLines, "cert_code");
+divCodeTextInstant(projects_codeLines, "projects_code");
+divCodeTextInstant(skills_h_codeLines, "skills_h_code");
+divCodeTextInstant(skills_s_codeLines, "skills_s_code");
+divCodeTextInstant(contactLines, "contact_code");
+divCodeTextInstant(skills_codeLines, "modul_code");
+
 document.addEventListener('consentClosed', () => {
 //window.addEventListener('load', () => {
   const imgDiv = document.querySelector('.pixel-image');
   setTimeout(() => {
-    imgDiv.classList.add('sharp'); 
-    divCodeText(header_codeLines, "header_code");
-    divCodeText(about_codeLines, "about_code");
-    divCodeText(cert_codeLines, "cert_code");
-    divCodeText(projects_codeLines, "projects_code");
-    divCodeText(skills_h_codeLines, "skills_h_code");
-    divCodeText(skills_s_codeLines, "skills_s_code");
-    divCodeText(contactLines, "contact_code");
-    divCodeText(skills_codeLines, "modul_code");
+    imgDiv.classList.add('sharp');     
+    divCodeText(header_codeLines, "header_code");    
   }, 500);
 });
+
 
 function divCodeText(cl, id){
   const observer = new IntersectionObserver((entries, obs) => {
@@ -275,6 +336,10 @@ function divCodeText(cl, id){
     threshold: 0.3
   });
 observer.observe(document.getElementById(id));
+}
+
+function divCodeTextInstant(cl, id){
+  typeInstant(cl, id);
 }
 
 function openLightbox(imageSrc) {
